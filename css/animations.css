@@ -50,6 +50,22 @@ html.js-ready .reveal.is-revealed {
   transform: translate(0, 0) scale(1);
 }
 
+/* Hero Section Elements: Always immediately visible to eliminate mobile blank-screen wait */
+.hero-section .reveal,
+html.js-ready .hero-section .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Mobile Devices: Resilient reveal overrides (prevent content from being stuck hidden) */
+@media (max-width: 768px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: opacity 0.4s ease, transform 0.4s ease !important;
+  }
+}
+
 /* --------------------------------------------------------------------------
    2. STICKY HEADER ELEVATION & ACTIVE NAV LINK INDICATOR
    -------------------------------------------------------------------------- */
