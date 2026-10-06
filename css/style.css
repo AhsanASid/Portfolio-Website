@@ -1712,12 +1712,38 @@ code, pre, .mono {
 }
 
 /* Certifications Sub-Section */
+.cert-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
 .cert-heading {
   font-size: 0.9375rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
+}
+
+.cert-verify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  transition: all var(--transition-fast);
+}
+
+.cert-verify-link:hover {
+  color: var(--accent-cyan-hover);
+  text-decoration: underline;
+  transform: translateX(2px);
 }
 
 .cert-grid {
@@ -1732,6 +1758,16 @@ code, pre, .mono {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+}
+
+.cert-card:hover {
+  border-color: var(--border-cyan);
+  background: var(--bg-slate-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-cyan);
 }
 
 .cert-icon {

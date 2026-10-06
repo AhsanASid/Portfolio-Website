@@ -5,11 +5,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-3b82f6.svg)](LICENSE)
 [![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-10b981)](#tech-stack)
 
-> **DevOps Engineer specializing in cloud-native platforms, AWS, Terraform (IaC), Kubernetes, Helm, Argo Rollouts, shell automation, and observability.**
+> **Software Engineer at Mobily Infotech with ~2 years of experience in systems operations and shell automation. Passionate about transitioning into DevOps & Cloud Infrastructure.**
 
 🌐 **Live Website**: [https://AhsanASid.github.io/Portfolio-Website/](https://AhsanASid.github.io/Portfolio-Website/)  
 👤 **Author**: Ahsan Ahmad Siddiqui ([@AhsanASid](https://github.com/AhsanASid))  
-🏢 **Role**: Oracle BRM Administrator (Systems Operations & Automation) at Mobily Infotech India Pvt Ltd  
+🏢 **Role**: Software Engineer at Mobily Infotech India Pvt Ltd (Promoted from IT Operations Intern)  
 📍 **Location**: Bengaluru, Karnataka, India  
 📫 **Contact**: [ahsansid001@gmail.com](mailto:ahsansid001@gmail.com) | [LinkedIn](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/)
 
@@ -20,7 +20,7 @@
 - [Overview](#-overview)
 - [Key Real-World Metrics](#-key-real-world-metrics)
 - [Technical Skills Matrix](#-technical-skills-matrix)
-- [Featured Production Projects](#-featured-production-projects)
+- [Featured Production & Practice Projects](#-featured-production--practice-projects)
 - [Professional Experience](#-professional-experience)
 - [Education & Certifications](#-education--certifications)
 - [Frontend Architecture](#-frontend-architecture)
@@ -31,15 +31,14 @@
 
 ## 🌟 Overview
 
-This repository hosts the official personal portfolio website of **Ahsan Ahmad Siddiqui**, a **DevOps Engineer** with enterprise systems operations experience and hands-on expertise in cloud-native platforms.
+This repository hosts the official personal portfolio website of **Ahsan Ahmad Siddiqui**, an early-career **Software Engineer** with **~2 years of professional experience** in enterprise systems operations, automation, and release support at **Mobily Infotech**.
 
 Key highlights:
-- Eliminating 50+ hours of monthly operational toil through shell automation at Mobily Infotech.
-- Codifying immutable Infrastructure as Code (Terraform) across AWS with S3 backend locking.
-- Orchestrating containerized workloads with Kubernetes, Helm, and Argo Rollouts (canary traffic shifting).
-- Implementing full-stack observability (Prometheus, Grafana, Loki) and 17-second disaster recovery (Velero & MinIO).
+- Earned a promotion from **IT Operations Intern** to full-time **Software Engineer** at Mobily Infotech.
+- Eliminated 50+ hours of monthly operational toil through parallelized shell scripting for bi-weekly release checksums.
+- Actively building practical, hands-on cloud and DevOps skills with AWS, Terraform, Docker, Kubernetes, Helm, Argo Rollouts, and full-stack observability.
 
-The website delivers a modern dark aesthetic inspired by obsidian terminal interfaces and cloud platforms, built with pure Vanilla HTML5, CSS3, and JavaScript with zero external build dependencies and strict WCAG 2.1 AA accessibility compliance.
+The website delivers a modern dark aesthetic inspired by obsidian terminal interfaces and cloud platforms, built with pure Vanilla HTML5, CSS3, and JavaScript with zero external build dependencies and strict WCAG 2.1 AA accessibility compliance across mobile, tablet, and desktop devices.
 
 ---
 
@@ -47,71 +46,60 @@ The website delivers a modern dark aesthetic inspired by obsidian terminal inter
 
 | Metric | Achievement | Description / Context |
 | :--- | :--- | :--- |
+| **~2 Years** | Professional Experience | Practical experience across IT Operations Intern and Software Engineer roles at Mobily Infotech |
 | **50+ Hours** | Monthly Operational Toil Saved | Engineered parallelized shell scripts automating bi-weekly release checksums at Mobily Infotech |
-| **100+ Steps** | Manual CLI Steps Eliminated | Streamlined complex manual release verification into background automated jobs |
-| **17 Seconds** | Disaster Recovery Restoration | 100% full namespace state restoration following simulated node failure via Velero & MinIO |
-| **24/7 SLA** | Enterprise High Availability | Frontline operations & RCA for mission-critical Oracle BRM billing systems |
+| **Promoted** | Career Progression | Promoted from IT Operations Intern to Software Engineer at Mobily Infotech |
+| **CloudOps** | Hands-On Practice Lab | 5-phase practical DevOps lab: AWS, Terraform, k8s, Argo Rollouts & Velero DR |
 
 ---
 
 ## 🛠 Technical Skills Matrix
 
-- **Cloud & Infrastructure as Code (IaC)**: AWS (VPC, IAM Least-Privilege, SSM Parameter Store, S3 State Locking, EKS), Terraform (Modular Architecture, S3 Backend Locking, Plan-Only Architectural Validation)
-- **Containers & Orchestration**: Kubernetes (k8s), kind (Kubernetes-in-Docker), Docker (Multi-stage, Non-root security), Helm 3, Argo Rollouts (Canary Deployments)
-- **CI/CD & Delivery Pipelines**: GitHub Actions, GitHub Container Registry (GHCR / Immutable SHA tagging), GitOps Architecture, Automated Rollbacks, Multi-Step Traffic Shifting
-- **Observability & Disaster Recovery**: Prometheus (Metrics Scraping, Retention Management), Grafana (Declarative Datasources-as-Code), Loki, Promtail, Velero (Backup & Restore), MinIO (S3 API)
-- **Scripting & Systems**: Python, Shell Scripting (Bash/sh, Solaris), Linux/Unix Internals, Process Automation, Cron
-- **Databases & Operations**: Oracle SQL, PL/SQL, Partitioned Database Optimization, Oracle BRM (Billing and Revenue Management), Remedy, Jira
+- **Scripting & Systems Operations (Production Focus)**: Shell Scripting (Bash/sh, Solaris), Linux/Unix Internals, Python Automation, Process Automation, Cron.
+- **Enterprise Operations & Databases**: Oracle SQL, PL/SQL, Partitioned Database Optimization, Oracle BRM (Billing Operations), Remedy, Jira.
+- **Cloud & Infrastructure as Code (Hands-on Lab)**: AWS (VPC, IAM, SSM, S3, EKS), Terraform (Modular Architecture, S3 Backend Locking, Plan-Only Architectural Validation).
+- **Containers & Progressive Delivery**: Kubernetes (k8s), kind (Kubernetes-in-Docker), Docker (Multi-stage, Non-root), Helm 3, Argo Rollouts (Canary Deployments).
+- **CI/CD, Observability & DR**: GitHub Actions CI/CD, GitHub Container Registry (GHCR), Prometheus (Metrics Scraping), Grafana, Velero & MinIO (Backup & DR).
 
 ---
 
-## 🚀 Featured Production Projects
+## 🚀 Featured Production & Practice Projects
 
 ### 1. CloudOps: Automated Cloud Infrastructure & Progressive Delivery
 - **Tech Stack**: AWS, Terraform, Kubernetes, Argo Rollouts, Helm 3, Prometheus, Grafana, Loki, Velero, MinIO, Docker, GitHub Actions, Python
-- **Key Capabilities**:
-  - **Modular AWS & Terraform**: VPC in `ap-south-1` across 2 AZs, least-privilege IAM, SSM Parameter Store, and encrypted S3 remote state with native locking (`use_lockfile`).
-  - **Container CI/CD**: Containerized Python microservice (`hello-api`) with non-root security and `/healthz` endpoints; automated GitHub Actions publishing immutable commit-SHA tagged images to GHCR.
-  - **Full-Stack Telemetry**: Prometheus metrics scraping (2h retention) and single-binary Loki + Promtail log streaming with Grafana datasources as code.
-  - **Progressive Delivery**: Argo Rollouts canary traffic shifting (25% → 50% → 75% → 100%) on a local kind cluster with automated rollbacks.
-  - **Disaster Recovery**: Velero & in-cluster MinIO backup executing 100% namespace state restoration in 17 seconds.
+- **Scope**: Hands-on 5-phase DevOps practice platform demonstrating modular cloud provisioning, containerized CI/CD, canary traffic shifting, and 17-second disaster recovery.
 
 ### 2. Enterprise Release Checksum & Systems Automation Engine
 - **Tech Stack**: Shell Scripting (Bash/sh), Solaris, Linux, Unix Internals, Background Concurrency, Cron, Oracle BRM
-- **Key Capabilities**:
-  - Replaced over 100 manual CLI steps per bi-weekly release cycle with parallelized background workers.
-  - Automated checksum calculations and package integrity verification across distributed servers.
-  - Saved 50+ hours of operational engineering toil every month at Mobily Infotech.
+- **Scope**: Replaced 100+ manual CLI steps per bi-weekly release cycle with parallelized background workers, saving 50+ hours of operational engineering toil every month at Mobily Infotech.
 
-### 3. Oracle BRM Partitioned Database Telemetry & SQL Performance Suite
+### 3. Oracle BRM Partitioned Database Diagnostics & SQL Suite
 - **Tech Stack**: Oracle SQL, PL/SQL, Partitioned Databases, Oracle BRM, Unix CLI, Remedy, Jira
-- **Key Capabilities**:
-  - Authored and optimized analytical queries across large partitioned billing databases to track capacity and detect telemetry anomalies.
-  - Supported 24/7 on-call rotations and conducted blameless root cause analyses (RCA) that reduced MTTR.
+- **Scope**: Authored and optimized analytical queries across partitioned billing databases to track capacity, detect telemetry anomalies, and support incident resolution.
 
-### 4. Hardened Python Microservice & DevSecOps Delivery Pipeline
+### 4. Hardened Python Microservice & Container CI/CD Pipeline
 - **Tech Stack**: Python, Docker (Multi-stage, Non-root), GitHub Actions, GHCR, Linux, Kubernetes
-- **Key Capabilities**:
-  - Built minimal-footprint container image adhering to non-root execution and security best practices.
-  - Automated GitHub Actions workflow publishing immutable commit-SHA tagged images to GHCR.
+- **Scope**: Security-hardened containerized service with non-root user execution, `/healthz` probes, and automated GitHub Actions workflows publishing immutable commit-SHA tagged images to GHCR.
 
 ---
 
 ## 💼 Professional Experience
 
-### Oracle BRM Administrator (Systems Operations & Automation)
+### Software Engineer
 **Mobily Infotech India Pvt Ltd** | Bengaluru, Karnataka, India  
 *April 2025 – Present*
-- Frontline technical support and operations management for critical enterprise billing platforms (Oracle BRM), ensuring high availability and strict SLA compliance.
+- Promoted to Software Engineer following successful completion of internship.
+- Provide frontline technical support and operations management for critical enterprise billing platforms (Oracle BRM), ensuring high availability and strict SLA compliance.
 - Engineered parallelized shell scripts saving 50+ hours of monthly operational toil and eliminating 100+ manual CLI steps.
-- Participated in 24/7 on-call rotations, diagnosing complex production bottlenecks and executing blameless RCA.
-- Authored and optimized complex Oracle SQL queries on large partitioned databases to detect anomalies before end-user degradation.
+- Participate in 24/7 on-call rotations, diagnosing complex production bottlenecks and executing root cause analysis (RCA).
+- Author and optimize complex Oracle SQL queries on large partitioned databases to detect anomalies before service degradation.
 
 ### IT Operations Intern
 **Mobily Infotech India Pvt Ltd** | Bengaluru, Karnataka, India  
 *August 2024 – April 2025*
 - Supported day-to-day operations, application telemetry monitoring, and release validation for enterprise billing software.
 - Diagnosed backend system errors and database exceptions using Unix command-line utilities and analytical SQL queries.
+- Assisted release management by executing deployment workflows and reviewing system integration documentation (HLD/LLD).
 
 ---
 
@@ -121,11 +109,11 @@ The website delivers a modern dark aesthetic inspired by obsidian terminal inter
 - **Bachelor of Technology (B.Tech) – Information Technology** (2020 – 2024)  
   *Shri Ramswaroop Memorial College of Engineering and Management (SRMCEM)* | Lucknow, Uttar Pradesh, India
 
-### Certifications
-- **AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)** — Amazon Web Services
-- **Python Real-World Applications (100 Projects Portfolio): Automation & Scripting** — Udemy
-- **Big Data Foundations – Level 1 & Hadoop Administration** — IBM
-- **Career Essentials in Generative AI** — Microsoft & LinkedIn
+### Verified Certifications (View on LinkedIn)
+- [AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Amazon Web Services
+- [Python Real-World Applications (100 Projects Portfolio): Automation & Scripting](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Udemy
+- [Big Data Foundations – Level 1 & Hadoop Administration](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — IBM
+- [Career Essentials in Generative AI](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Microsoft & LinkedIn
 
 ---
 
