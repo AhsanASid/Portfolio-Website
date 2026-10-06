@@ -1,260 +1,121 @@
-# Ahsan Ahmad Siddiqui — Portfolio Content & Specifications
+# Ahsan Ahmad Siddiqui — Professional Portfolio Content Specification
 
-Welcome to the canonical content documentation and data schema for **Ahsan Ahmad Siddiqui's Portfolio Website**. This document provides high-impact copy, architectural descriptions, skill categorizations, and metric breakdowns designed for immediate integration into the portfolio interface.
+> **DevOps Engineer | Cloud Infrastructure & Systems Automation**  
+> Bengaluru, Karnataka, India | [ahsansid001@gmail.com](mailto:ahsansid001@gmail.com)  
+> [LinkedIn: linkedin.com/in/ahsan-ahmad-siddiqui-594120201/](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/) | [GitHub: github.com/AhsanASid](https://github.com/AhsanASid)
 
 ---
 
-## 1. Profile & Brand Positioning
+## 1. Professional Summary
 
-### Core Identification
-- **Full Name**: Ahsan Ahmad Siddiqui
-- **Professional Title**: Software & Data Engineer | Cloud & Infrastructure Specialist
-- **Tagline**: *Architecting robust data pipelines, scalable cloud infrastructure, and high-performance software solutions.*
-- **Availability**: Actively seeking Software & Data Engineering Opportunities (Full-Time / High-Impact Roles)
-- **Location**: India (Open to Remote & Relocation)
-- **GitHub**: [https://github.com/AhsanASid](https://github.com/AhsanASid)
-- **Email**: `ahsanasiddiqui.dev@gmail.com`
-- **LinkedIn**: [https://linkedin.com/in/ahsanasid](https://linkedin.com/in/ahsanasid)
+DevOps Engineer with enterprise systems operations experience and hands-on expertise in cloud-native platforms. Proven track record of eliminating 50+ hours of monthly operational toil through shell automation, maintaining high-availability production platforms, and resolving mission-critical incidents. Technically proficient in Infrastructure as Code (Terraform), container orchestration (Kubernetes, Docker, Helm), CI/CD pipelines (GitHub Actions), progressive delivery (Argo Rollouts), and full-stack observability (Prometheus, Grafana, Loki). Strong background in root cause analysis (RCA), blameless incident reviews, and cost-conscious cloud architecture.
 
-### Bio & Elevator Pitch
-> *"I am a Software and Data Engineer passionate about turning raw data into high-value analytical engines and designing fault-tolerant, automated cloud systems. My experience spans architecting event-driven ETL/ELT pipelines across Google Cloud Platform (GCP) and Amazon Web Services (AWS), codifying cloud infrastructure with Terraform (IaC), and building asynchronous microservices with FastAPI and Redis. With a strong algorithmic foundation tested in competitive programming arenas like TCS CodeVita, I approach system design with a relentless focus on computational efficiency, scalability, and code craft."*
+---
 
-### Key Portfolio Metrics & Badges
-| Metric | Value | Description |
+## 2. Core Quantitative Metrics
+
+| Metric | Achievement / Impact | Context / Domain |
 | :--- | :--- | :--- |
-| **Data Throughput** | `10M+` | Daily transactional records processed via automated ETL/ELT pipelines |
-| **Algorithmic Ranking** | `TCS CodeVita Qualifier` | Ranked global contender solving complex dynamic programming & graph problems |
-| **Infrastructure Automation** | `100% IaC` | Zero-click multi-cloud environment orchestration via Terraform & GitHub Actions |
-| **Sub-Millisecond Caching** | `< 15ms` | High-concurrency response latency achieved with Redis & asynchronous I/O |
+| **50+ Hours** | Monthly Operational Toil Saved | Automated parallelized shell scripts for bi-weekly release checksums at Mobily Infotech |
+| **100+** | Manual CLI Steps Eliminated | Streamlined complex manual release verification into automated background workflows |
+| **17 Seconds** | Disaster Recovery Restoration | 100% full namespace backup and recovery executed via Velero & in-cluster MinIO |
+| **24/7** | Enterprise High-Availability SLA | Frontline operations management & incident RCA for Oracle BRM production billing |
 
 ---
 
-## 2. Technical Skills Matrix
+## 3. Technical Competencies Matrix
 
-### Category 1: Programming & Core Languages
-- **Python**: Expert — AsyncIO, multiprocessing, data frameworks, API development, algorithmic scripting.
-- **SQL**: Expert — Advanced analytical queries, window functions, indexing, partitioning, schema normalization.
-- **C++**: Advanced — STL, memory efficiency, high-performance competitive programming algorithms.
-- **Bash / Shell**: Advanced — Automation scripting, Linux environment management, CI/CD pipeline triggers.
-- **JavaScript**: Intermediate — Full-stack awareness, modern frontend integration, web API consumption.
+### Cloud & Infrastructure as Code (IaC)
+- **AWS**: VPC, IAM Least-Privilege Policies, SSM Parameter Store Secrets, S3 Remote State with Native Locking, EKS Architecture.
+- **Terraform**: Modular Multi-AZ VPC Architecture, Remote S3 Backend State Locking (`use_lockfile`), Plan-Only Architectural Validation (eliminating unnecessary billable cloud costs).
 
-### Category 2: Data Engineering & Big Data
-- **ETL / ELT Pipelines**: End-to-end design, batch and streaming ingestion, deduplication, fault tolerance.
-- **Google BigQuery**: Partitioned and clustered tables, serverless analytical querying, performance tuning.
-- **Apache Airflow**: Workflow orchestration, DAG authoring, task dependencies, automated retry alerts.
-- **PySpark / Apache Spark**: Distributed batch computation, DataFrame manipulation, in-memory parallel transformations.
-- **Data Modeling & Warehousing**: Star and Snowflake schemas, dimensional modeling, slow-changing dimensions (SCD).
-- **Pandas & NumPy**: In-depth exploratory data analysis, vectorized array operations, data wrangling.
-- **dbt (Data Build Tool)**: In-warehouse transformations, automated testing, documentation.
+### Containers & Orchestration
+- **Kubernetes (k8s)**: Namespace isolation, multi-tier deployments, configmaps/secrets, health probes.
+- **kind (Kubernetes-in-Docker)**: Local production-parity multi-node cluster provisioning.
+- **Docker**: Multi-stage builds, non-root user execution, security boundary hardening.
+- **Helm 3**: Modular chart releases, values-as-code, dependency management.
+- **Argo Rollouts**: Canary deployment controller, automated traffic shifting (25% → 50% → 75% → 100%), automated rollback triggers.
 
-### Category 3: Cloud & DevOps (Infrastructure as Code)
-- **Google Cloud Platform (GCP)**: Cloud Run, Cloud Functions, BigQuery, Pub/Sub, Cloud Storage, IAM, VPC.
-- **Amazon Web Services (AWS)**: S3, EC2, IAM, Lambda, RDS, CloudWatch.
-- **Terraform (IaC)**: Declarative multi-cloud provisioning, reusable modules, remote state locking.
-- **Docker & Containerization**: Multi-stage builds, minimal production images, Docker Compose setups.
-- **Git & GitHub Actions (CI/CD)**: Automated linting, test suites, container builds, and deployment triggers.
-- **Linux Environment**: Systems internals, process management, performance monitoring, networking fundamentals.
+### CI/CD & Delivery Pipelines
+- **GitHub Actions**: Automated pull request validation, linting, build verification, container publishing.
+- **GitHub Container Registry (GHCR)**: Immutable commit-SHA tagged images, multi-architecture tagging.
+- **GitOps Architecture**: Declarative state reconciliation and reproducible release versions.
 
-### Category 4: Backend & Systems Architecture
-- **FastAPI**: Asynchronous REST microservices, Pydantic schemas, dependency injection, OpenAPI docs.
-- **PostgreSQL**: Relational schema design, ACID transactions, async drivers (asyncpg), connection pooling.
-- **Redis**: In-memory caching, cache-aside pattern, rate limiting, pub/sub messaging, session state.
-- **Flask**: Lightweight web services, internal utilities, prototyped endpoints.
-- **Architectural Principles**: Twelve-Factor App, clean layered architecture, event-driven design, zero-trust security.
+### Observability & Disaster Recovery
+- **Prometheus**: ServiceMonitor metrics scraping, resource-conscious 2-hour retention policies.
+- **Grafana**: Declarative datasources-as-code and dashboards-as-code.
+- **Loki & Promtail**: Single-binary log ingestion and PromQL-compatible LogQL querying.
+- **Velero & MinIO**: Zero-cost S3-compatible snapshot backup, disaster simulation, and 100% namespace restoration in 17s.
+
+### Scripting & Systems Operations
+- **Shell Scripting (Bash/sh, Solaris)**: Parallelized background execution, time-based filtering, cron automation.
+- **Python**: Automation utilities, microservice development, telemetry scripts.
+- **Linux/Unix Internals**: Process inspection, IPC, signal handling, storage optimization.
+- **Databases & Enterprise Platforms**: Oracle SQL, PL/SQL, Partitioned Database Optimization, Oracle BRM (Billing and Revenue Management), Remedy, Jira.
 
 ---
 
-## 3. Notable Achievements & Honors
+## 4. Featured Technical Projects
 
-### 1. TCS CodeVita Contestant & Ranked Qualifier
-- **Context**: Tata Consultancy Services’ flagship global competitive programming contest recognized by the Guinness World Records.
-- **Accomplishment**: Ranked qualifier demonstrating high-speed problem solving under strict time and memory limits.
-- **Core Competencies**:
-  - Implemented complex graph algorithms (Dijkstra, DFS/BFS with state pruning), Dynamic Programming, and Combinatorics.
-  - Authored optimal time-complexity solutions passing stringent edge-case suites.
-  - Ranked among the top competitive programming contenders globally.
+### Project 1: CloudOps: Automated Cloud Infrastructure & Progressive Delivery
+*Technologies*: AWS, Terraform, Kubernetes (k8s/kind), Argo Rollouts, Helm 3, Prometheus, Grafana, Loki, Velero, MinIO, Docker, GitHub Actions, Python  
+- **Phase 1 – Modular Cloud Infrastructure (AWS & Terraform)**: Built a reusable Terraform VPC module in `ap-south-1` across 2 AZs, least-privilege IAM roles, SSM Parameter Store secrets, and encrypted S3 remote state with native locking (`use_lockfile`); designed an EKS module validated via `terraform plan` (plan-only to strictly eliminate billable cloud spend).
+- **Phase 2 – Container CI/CD Pipeline (GitHub Actions & GHCR)**: Developed a containerized Python microservice (`hello-api`) with non-root security and health endpoints (`/healthz`); built automated GitHub Actions workflows publishing immutable commit-SHA tagged images to GitHub Container Registry (GHCR).
+- **Phase 3 – Full-Stack Observability (Helm, Prometheus & Loki)**: Deployed a resource-conscious telemetry pipeline into a dedicated namespace using Prometheus (metrics scraping, 2h retention) and single-binary Loki + Promtail (log streaming); declaratively provisioned Grafana datasources as code for unified metrics and log visualization.
+- **Phase 4 – Progressive Delivery (Argo Rollouts)**: Migrated workloads from standard Deployments to Argo Rollouts on a local `kind` cluster, implementing automated multi-step Canary traffic shifting (25% → 50% → 75% → 100%) and automated rollback verification.
+- **Phase 5 – Disaster Recovery & Platform Hardening (Velero & MinIO)**: Established zero-cost S3-compatible backup and DR using Velero and in-cluster MinIO, successfully executing full namespace backups, simulated catastrophic failure, and 100% state restoration in 17 seconds.
 
-### 2. Multi-Cloud Infrastructure Automation via Terraform
-- **Context**: Engineering reproducible and secure cloud foundations without manual console drift.
-- **Accomplishment**: Architected modular Terraform configurations spanning both GCP and AWS with state isolation and automated CI validation.
-- **Core Competencies**:
-  - Zero-touch multi-environment provisioning (Dev / Staging / Prod).
-  - IAM least-privilege role policies and encrypted remote backend state storage.
+### Project 2: Enterprise Release Checksum & Systems Automation Engine
+*Technologies*: Shell Scripting (Bash/Solaris), Unix Internals, Linux, Background Concurrency, Time-based Filtering, Cron  
+- **Context**: Oracle BRM enterprise billing platform operations at Mobily Infotech.
+- **Problem**: Bi-weekly enterprise releases involved over 100 repetitive manual CLI steps to verify artifact checksums, leading to 50+ hours of operational toil monthly and risk of human error.
+- **Solution**: Engineered parallelized shell scripts utilizing time-based filtering and asynchronous background execution to calculate checksums, validate deployment packages, and log verification states automatically.
+- **Impact**: Eliminated 100+ manual CLI steps per cycle and recovered 50+ hours of monthly engineering time.
 
-### 3. Pipeline Performance & Cost Optimization
-- **Context**: High-volume data warehousing on Google BigQuery and relational databases.
-- **Accomplishment**: Reduced query execution expenses by over 40% and improved latency by 3.5x via strategic table partitioning, clustering, and materialized aggregation views.
+### Project 3: Oracle BRM Partitioned Database Telemetry & SQL Performance Suite
+*Technologies*: Oracle SQL, PL/SQL, Partitioned Database Optimization, UNIX CLI, Remedy, Jira  
+- **Context**: High-availability billing platform capacity management at Mobily Infotech.
+- **Problem**: Enterprise telecom billing tables generate massive transaction datasets where partition performance bottlenecks and exceptions risk SLA breaches.
+- **Solution**: Developed optimized analytical SQL queries on partitioned tables to inspect telemetry, diagnose exceptions before service degradation, and provide actionable technical summaries that reduced MTTR for L2/L3 teams.
+- **Impact**: Guaranteed 24/7 high availability, prevented customer-facing outages, and established proactive system capacity guidelines.
 
----
-
-## 4. Featured Project Showcases
-
-### Project 1: Cloud-Native Event-Driven ETL Pipeline
-- **Role**: Lead Cloud & Data Architect
-- **Tech Stack**: `Google Cloud Platform (GCP)`, `Terraform`, `Google BigQuery`, `Cloud Run`, `Python`, `Cloud Pub/Sub`, `GitHub Actions`, `Docker`
-- **GitHub**: [https://github.com/AhsanASid/cloud-native-etl-pipeline](https://github.com/AhsanASid/cloud-native-etl-pipeline)
-
-#### Architecture Diagram
-```mermaid
-flowchart LR
-    A["Data Producers / Webhooks"] --> B["GCP Cloud Pub/Sub"]
-    B --> C["Cloud Run Ingestion Service (Python / Docker)"]
-    C --> D["Cloud Storage (Raw Archive)"]
-    C --> E["Google BigQuery (Partitioned & Clustered)"]
-    E --> F["BI Dashboards & Analytical Queries"]
-    
-    subgraph IaC & Automation
-        G["Terraform Configuration"] -->|Provisions & Manages| B
-        G -->|Provisions & Manages| C
-        G -->|Provisions & Manages| E
-        H["GitHub Actions CI/CD"] -->|Validates & Deploys| G
-    end
-```
-
-#### Problem Statement
-Traditional cron-based batch ingestion pipelines suffer from fixed latency intervals, inability to handle bursty event traffic, and persistent infrastructure costs during idle periods.
-
-#### Solution & Engineering Design
-- Constructed a fully decoupled, event-driven streaming ingestion system on Google Cloud Platform.
-- Used **Cloud Pub/Sub** to ingest and buffer incoming transaction messages with at-least-once delivery semantics.
-- Containerized a lightweight **Python** worker running on **Cloud Run** configured to auto-scale from 0 to multiple instances based on queue depth.
-- Structured analytical ingestion into **Google BigQuery** using day-partitioned and customer-ID clustered tables, minimizing scan volume and query costs.
-- Completely codified the cloud topology using **Terraform**, versioned with GitHub Actions for automated linting, planning, and deployment.
-
-#### Key Metrics & Results
-- **Ingestion Latency**: Sub-1.5s from event emission to queryable warehouse state.
-- **Uptime & Reliability**: 99.9% availability with automated dead-letter queues.
-- **IaC Coverage**: 100% reproducible cloud setup across environments.
+### Project 4: Hardened Python Microservice & DevSecOps Delivery Pipeline
+*Technologies*: Python, Docker (Multi-stage, Non-root), GitHub Actions, GHCR, Linux, Kubernetes  
+- **Problem**: Insecure container images and mutable tags introduce attack vectors and deployment inconsistencies.
+- **Solution**: Built containerized Python service adhering to DevSecOps principles: multi-stage builds, non-root execution, explicit `/healthz` probes, and automated GitHub Actions workflows pushing immutable commit-SHA tagged images to GHCR.
+- **Impact**: 100% automated CI/CD pipeline, zero root-container vulnerabilities, and reproducible immutable deployment artifacts.
 
 ---
 
-### Project 2: Distributed Data Processing Engine
-- **Role**: Data Engineer & Systems Developer
-- **Tech Stack**: `Python`, `Apache Spark (PySpark)`, `Docker`, `AWS S3`, `Apache Airflow`, `PostgreSQL`, `Parquet`
-- **GitHub**: [https://github.com/AhsanASid/distributed-data-engine](https://github.com/AhsanASid/distributed-data-engine)
+## 5. Professional Experience
 
-#### Architecture Diagram
-```mermaid
-flowchart TD
-    S["Raw Data in AWS S3"] --> W["Airflow Scheduler & DAG Orchestrator"]
-    W --> P["PySpark Distributed Worker Cluster (Docker)"]
-    P -->|Vectorized Cleaning & Dedup| M["In-Memory Transformations"]
-    M -->|Columnar Export| O["Optimized Parquet Storage (AWS S3)"]
-    M -->|Audit Metrics & Metadata| DB[("PostgreSQL Metadata Store")]
-```
+### Oracle BRM Administrator (Systems Operations & Automation)
+**Mobily Infotech India Pvt Ltd** | Bengaluru, Karnataka, India  
+*April 2025 – Present*
+- Provide frontline technical support and operations management for critical enterprise billing platforms (Oracle BRM), ensuring high availability and strict SLA compliance across distributed production environments.
+- Engineered parallelized shell scripts utilizing time-based filtering and background jobs to automate checksum operations for bi-weekly releases, eliminating 100+ manual CLI steps and saving 50+ hours of operational toil monthly.
+- Participate in 24/7 on-call rotations, diagnosing complex production bottlenecks, executing blameless root cause analysis (RCA), and developing standard operating procedures (SOPs).
+- Author and optimize complex Oracle SQL queries on large partitioned databases to support capacity management and detect anomalies before end-user service degradation.
+- Championed incident and problem management workflows, drafting detailed technical summaries for L2/L3 engineering teams that reduced Mean Time to Resolution (MTTR).
 
-#### Problem Statement
-Single-node pandas processing pipelines suffered severe memory errors (`MemoryError` / OOM crashes) when ingesting multi-gigabyte datasets, lacking fault-tolerant recovery and job checkpointing.
-
-#### Solution & Engineering Design
-- Re-architected batch ingestion using **Apache Spark / PySpark** running inside a containerized cluster.
-- Ingested multi-format raw files directly from **AWS S3**, performing distributed schema validation, window-based deduplication, and anomaly filtering across worker nodes.
-- Orchestrated the multi-stage workflows using **Apache Airflow**, establishing DAG dependencies, SLA alerts, and automatic retries upon transient failures.
-- Saved analytical outputs in compressed columnar **Parquet** format, cutting storage size and accelerating downstream BI queries.
-
-#### Key Metrics & Results
-- **Performance**: 4.2x faster data transformation compared to baseline single-node scripts.
-- **Storage Efficiency**: 65% reduction in disk footprint utilizing Snappy-compressed Parquet.
-- **Fault Resilience**: Zero data corruption with stage checkpointing and idempotent target writes.
+### IT Operations Intern
+**Mobily Infotech India Pvt Ltd** | Bengaluru, Karnataka, India  
+*August 2024 – April 2025*
+- Supported day-to-day operations, application telemetry monitoring, and release validation for enterprise billing software.
+- Diagnosed backend system errors and database exceptions using Unix command-line utilities and analytical SQL queries.
+- Assisted release management by executing deployment workflows and reviewing system integration documentation (HLD/LLD).
+- Maintained strict adherence to operational SLAs, gaining hands-on foundation in high-availability enterprise environments.
 
 ---
 
-### Project 3: Scalable Microservice API & Caching Layer
-- **Role**: Backend & Systems Engineer
-- **Tech Stack**: `FastAPI`, `Python`, `Redis`, `PostgreSQL`, `Docker Compose`, `AsyncIO`, `Pydantic`, `SQLAlchemy 2.0`
-- **GitHub**: [https://github.com/AhsanASid/scalable-microservice-cache](https://github.com/AhsanASid/scalable-microservice-cache)
-
-#### Architecture Diagram
-```mermaid
-flowchart LR
-    Client["Client / Frontend"] --> API["FastAPI Asynchronous Gateway"]
-    API -->|1. Check Cache| R[("Redis Cache")]
-    R -->|Cache Hit: < 12ms| API
-    API -->|2. Cache Miss: Query DB| PG[("PostgreSQL DB")]
-    PG -->|Write Back to Cache| R
-    PG -->|Return Data| API
-    API --> Client
-```
-
-#### Problem Statement
-Database connection saturation and latency spikes under concurrent read-heavy traffic hindered application responsiveness and drained database CPU cycles.
-
-#### Solution & Engineering Design
-- Developed an asynchronous RESTful microservice using **FastAPI** and Python's native `asyncio` event loop.
-- Implemented an intelligent **Redis** cache-aside layer featuring configurable Time-to-Live (TTL) keys and automated invalidation triggers on mutation endpoints.
-- Enforced strict schema validation and serialization using **Pydantic v2** models for ultra-low JSON serialization overhead.
-- Deployed through **Docker Compose** with network segmentation, automated health probes, and non-root execution security.
-
-#### Key Metrics & Results
-- **Latency**: Sub-12ms response times for cached routes (down from 140ms on direct DB queries).
-- **Concurrency**: Sustains 5,000+ requests per second in stress-test benchmarks.
-- **Test Integrity**: 95% test coverage using Pytest and automated async fixtures.
-
----
-
-### Project 4: Competitive Programming & Algorithmic Repository
-- **Role**: Algorithm Designer & Problem Solver
-- **Tech Stack**: `Python`, `C++`, `Data Structures`, `Dynamic Programming`, `Graph Algorithms`, `Combinatorics`
-- **GitHub**: [https://github.com/AhsanASid/algorithmic-problem-solving](https://github.com/AhsanASid/algorithmic-problem-solving)
-
-#### Overview & Engineering Focus
-A rigorous, curated repository containing optimized solutions to advanced algorithmic challenges from **TCS CodeVita**, LeetCode, and competitive coding contests.
-
-#### Core Algorithmic Domains Covered
-1. **Graph Theory**: Dijkstra's shortest path, Kruskal's / Prim's MST, Bellman-Ford, Tarjan's Strongly Connected Components, Topological Sorting.
-2. **Dynamic Programming**: Multi-dimensional DP, 0/1 & Unbounded Knapsack, Longest Common Subsequence, Matrix Exponentiation, Bitmask DP.
-3. **Advanced Data Structures**: Segment Trees with Lazy Propagation, Fenwick Trees (Binary Indexed Trees), Trie, Disjoint Set Union (DSU) with path compression and rank optimization.
-4. **Computational Geometry & Number Theory**: Convex Hull, Sieve of Eratosthenes, Modular Multiplicative Inverse, Fast Powering algorithms.
-
-#### Key Highlights & Benchmarks
-- **300+ Problems Solved**: Demonstrating consistent problem-solving discipline and asymptotic rigor.
-- **TCS CodeVita Qualifier**: Proven high-pressure problem solving under strict execution clocks.
-- **Benchmarking Suite**: Custom Python and C++ test runner comparing execution runtimes across input distributions.
-
----
-
-## 5. Experience, Education & Certifications
-
-### Experience
-- **Role**: Software & Data Engineer
-- **Timeline**: 2023 - Present
-- **Focus**: Distributed pipelines, cloud infrastructure, backend engineering, performance tuning.
-- **Key Contributions**:
-  - Designed cloud-native pipelines ingesting heterogeneous telemetry data into GCP BigQuery and PostgreSQL.
-  - Provisioned multi-cloud resources with Terraform, enforcing infrastructure immutability and compliance.
-  - Built high-concurrency asynchronous backend services handling thousands of RPS with Redis caching.
-  - Implemented GitHub Actions CI/CD workflows for linting, security scanning, unit testing, and Docker image publishing.
+## 6. Education & Certifications
 
 ### Education
-- **Degree**: Bachelor of Technology in Computer Science & Engineering
-- **Timeline**: 2020 - 2024
-- **Key Coursework**: Data Structures & Algorithms, Distributed Systems, Cloud Computing, Database Management Systems (DBMS), Operating Systems, Computer Networks.
+- **Bachelor of Technology (B.Tech) – Information Technology** (2020 – 2024)  
+  *Shri Ramswaroop Memorial College of Engineering and Management (SRMCEM)* | Lucknow, Uttar Pradesh, India
 
-### Certifications & Honors
-- **TCS CodeVita Contestant & Ranked Qualifier** (Tata Consultancy Services, 2024)
-- **Cloud Architecture & Data Engineering Specialization** (GCP / AWS Practices, 2024)
-- **HashiCorp Terraform Associate** (Curriculum & IaC Design Patterns, 2024)
-
----
-
-## 6. Social Links & Contact Information
-
-| Channel | Link / Value |
-| :--- | :--- |
-| **GitHub** | [https://github.com/AhsanASid](https://github.com/AhsanASid) |
-| **Email** | [ahsanasiddiqui.dev@gmail.com](mailto:ahsanasiddiqui.dev@gmail.com) |
-| **LinkedIn** | [https://linkedin.com/in/ahsanasid](https://linkedin.com/in/ahsanasid) |
-| **Portfolio Repo** | [https://github.com/AhsanASid](https://github.com/AhsanASid) |
-| **Availability** | Open for Software & Data Engineering Opportunities |
-
----
-
-## 7. Guidelines for UI/UX Designer Agent
-
-When rendering this content into the UI:
-1. **Hero Section**: Highlight the title *"Software & Data Engineer | Cloud & Infrastructure Specialist"* prominently with accent colors (e.g. Electric Cyan / Deep Slate / Violet). Include direct CTA buttons: *"Explore Projects"*, *"View GitHub"*, and *"Contact Me"*.
-2. **Skills Component**: Categorize skills by the 4 clear categories. Show badges or chips with clear distinction for `highlight: true` skills.
-3. **Projects Grid / Cards**: Display the 4 showcase projects with tech stack badges, key metric counters, problem/solution summaries, and direct GitHub action links.
-4. **Achievements Section**: Give special prominence to the **TCS CodeVita Qualifier** badge with an algorithmic flair (e.g., code snippet preview or algorithmic icon).
-5. **Interactive Architecture**: Embed the clean flow diagrams or interactive architecture pills to emphasize cloud-native capability.
-6. **Data Source**: UI can consume `/home/ahsan-ahmad-siddiqui/Portfolio Website/data/content.json` dynamically or import it into any JavaScript/TypeScript/React/HTML template.
+### Verified Certifications
+1. **AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)** — Amazon Web Services (AWS)
+2. **Python Real-World Applications (100 Projects Portfolio): Automation & Scripting** — Udemy
+3. **Big Data Foundations – Level 1 & Hadoop Administration** — IBM
+4. **Career Essentials in Generative AI** — Microsoft & LinkedIn

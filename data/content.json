@@ -2,297 +2,325 @@
   "profile": {
     "name": "Ahsan Ahmad Siddiqui",
     "preferredName": "Ahsan",
-    "headline": "Software & Data Engineer | Cloud & Infrastructure Specialist",
-    "tagline": "Architecting robust data pipelines, scalable cloud infrastructure, and high-performance software solutions.",
-    "about": "Results-driven Software and Data Engineer specializing in modern cloud architectures, distributed data pipelines, and infrastructure-as-code. Experienced in designing resilient ETL/ELT workflows across GCP and AWS, automating multi-cloud environments using Terraform, and building high-throughput microservices in Python. Passionate about algorithmic problem-solving, competitive programming, and engineering high-reliability systems from zero to production.",
-    "location": "India (Open to Remote & Global Relocation)",
-    "status": "Actively seeking Software & Data Engineering Opportunities",
-    "availability": "Available immediately for Full-time & High-impact Roles",
+    "headline": "DevOps Engineer | Cloud Infrastructure & Systems Automation",
+    "tagline": "Eliminating operational toil, codifying resilient cloud infrastructure, and maintaining high-availability enterprise platforms.",
+    "about": "DevOps Engineer with enterprise systems operations experience and hands-on expertise in cloud-native platforms. Proven track record of eliminating 50+ hours of monthly operational toil through shell automation, maintaining high-availability production platforms, and resolving mission-critical incidents. Technically proficient in Infrastructure as Code (Terraform), container orchestration (Kubernetes, Docker, Helm), CI/CD pipelines (GitHub Actions), progressive delivery (Argo Rollouts), and full-stack observability (Prometheus, Grafana, Loki). Strong background in root cause analysis (RCA), blameless incident reviews, and cost-conscious cloud architecture.",
+    "location": "Bengaluru, Karnataka, India",
+    "status": "DevOps Engineer @ Mobily Infotech | Open to Cloud & DevOps Opportunities",
+    "availability": "Available for High-Impact DevOps & Cloud Roles",
     "socials": {
       "github": "https://github.com/AhsanASid",
-      "linkedin": "https://linkedin.com/in/ahsanasid",
-      "email": "ahsanasiddiqui.dev@gmail.com",
-      "portfolio": "https://ahsanasid.github.io"
+      "linkedin": "https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/",
+      "email": "ahsansid001@gmail.com",
+      "portfolio": "https://AhsanASid.github.io/Portfolio-Website/"
     }
   },
   "stats": [
     {
-      "label": "Pipeline Throughput",
-      "value": "10M+",
-      "description": "Daily records processed via automated ETL/ELT pipelines"
+      "label": "Operational Toil Saved",
+      "value": "50+ hrs",
+      "description": "Monthly engineering hours saved through parallelized shell automation"
     },
     {
-      "label": "Competitive Coding",
-      "value": "TCS CodeVita",
-      "description": "Ranked Qualifier & Algorithmic Problem Solver"
+      "label": "Release Steps Eliminated",
+      "value": "100+",
+      "description": "Manual CLI steps automated for bi-weekly enterprise release checksums"
     },
     {
-      "label": "Cloud Provisioning",
-      "value": "100%",
-      "description": "Infrastructure automated via Terraform (IaC)"
+      "label": "Disaster Recovery Time",
+      "value": "17s",
+      "description": "100% full namespace state restoration using Velero and in-cluster MinIO"
     },
     {
-      "label": "API Latency",
-      "value": "< 15ms",
-      "description": "Sub-millisecond Redis caching on critical microservice endpoints"
+      "label": "Enterprise Production SLAs",
+      "value": "24/7",
+      "description": "Frontline operations & RCA for mission-critical Oracle BRM billing systems"
     }
   ],
   "skills": {
     "categories": [
       {
-        "name": "Programming & Core",
-        "description": "Foundational languages for systems programming, data pipelines, and automation scripts.",
+        "name": "Cloud & Infrastructure as Code (IaC)",
+        "description": "Cloud-native infrastructure provisioning, security policies, and reproducible declarative architecture.",
         "skills": [
-          { "name": "Python", "level": "Expert", "highlight": true },
-          { "name": "SQL", "level": "Expert", "highlight": true },
-          { "name": "C++", "level": "Advanced", "highlight": true },
-          { "name": "Bash / Shell", "level": "Advanced", "highlight": false },
-          { "name": "JavaScript", "level": "Intermediate", "highlight": false }
+          { "name": "AWS (VPC, IAM, SSM, S3, EKS)", "level": "Advanced", "highlight": true },
+          { "name": "Terraform (Modular Architecture)", "level": "Expert", "highlight": true },
+          { "name": "S3 Remote State & Backend Locking", "level": "Expert", "highlight": true },
+          { "name": "IAM Least-Privilege Governance", "level": "Advanced", "highlight": true },
+          { "name": "SSM Parameter Store Secrets", "level": "Advanced", "highlight": false },
+          { "name": "Cost-Conscious Cloud Architecture", "level": "Expert", "highlight": false }
         ]
       },
       {
-        "name": "Data Engineering & Big Data",
-        "description": "Architectures, batch/stream processing frameworks, and analytical warehouses.",
+        "name": "Containers, Kubernetes & Progressive Delivery",
+        "description": "Cloud-native container orchestration, GitOps deployment, and traffic shifting.",
         "skills": [
-          { "name": "ETL / ELT Pipelines", "level": "Expert", "highlight": true },
-          { "name": "Google BigQuery", "level": "Expert", "highlight": true },
-          { "name": "Apache Airflow", "level": "Advanced", "highlight": true },
-          { "name": "PySpark / Spark", "level": "Advanced", "highlight": true },
-          { "name": "Data Modeling & Warehousing", "level": "Advanced", "highlight": true },
-          { "name": "Pandas & NumPy", "level": "Expert", "highlight": false },
-          { "name": "dbt (Data Build Tool)", "level": "Intermediate", "highlight": false }
+          { "name": "Kubernetes (k8s)", "level": "Advanced", "highlight": true },
+          { "name": "Docker (Multi-stage, Non-root)", "level": "Expert", "highlight": true },
+          { "name": "Helm 3 Package Management", "level": "Advanced", "highlight": true },
+          { "name": "Argo Rollouts (Canary Shifting)", "level": "Advanced", "highlight": true },
+          { "name": "kind (Kubernetes-in-Docker)", "level": "Advanced", "highlight": false },
+          { "name": "Automated Rollbacks & Health Probes", "level": "Expert", "highlight": false }
         ]
       },
       {
-        "name": "Cloud & DevOps (IaC)",
-        "description": "Cloud-native services, automated provisioning, container orchestration, and CI/CD.",
+        "name": "CI/CD, Observability & Disaster Recovery",
+        "description": "Continuous integration, telemetry pipelines, and rapid state recovery.",
         "skills": [
-          { "name": "Google Cloud Platform (GCP)", "level": "Expert", "highlight": true },
-          { "name": "Amazon Web Services (AWS)", "level": "Advanced", "highlight": true },
-          { "name": "Terraform (IaC)", "level": "Expert", "highlight": true },
-          { "name": "Docker & Containerization", "level": "Advanced", "highlight": true },
-          { "name": "Git & GitHub Actions (CI/CD)", "level": "Expert", "highlight": true },
-          { "name": "Linux / Systems Administration", "level": "Advanced", "highlight": false }
+          { "name": "GitHub Actions CI/CD", "level": "Expert", "highlight": true },
+          { "name": "GitHub Container Registry (GHCR)", "level": "Advanced", "highlight": true },
+          { "name": "Prometheus (Metrics Scraping)", "level": "Advanced", "highlight": true },
+          { "name": "Grafana (Datasources-as-Code)", "level": "Advanced", "highlight": true },
+          { "name": "Loki & Promtail (Log Streaming)", "level": "Advanced", "highlight": false },
+          { "name": "Velero & MinIO (Backup & DR)", "level": "Expert", "highlight": true }
         ]
       },
       {
-        "name": "Backend & API Engineering",
-        "description": "Scalable REST APIs, asynchronous execution, and high-performance databases.",
+        "name": "Scripting, Databases & Enterprise Operations",
+        "description": "Production systems administration, database optimization, and operational toil elimination.",
         "skills": [
-          { "name": "FastAPI", "level": "Expert", "highlight": true },
-          { "name": "PostgreSQL", "level": "Advanced", "highlight": true },
-          { "name": "Redis (In-Memory Cache)", "level": "Advanced", "highlight": true },
-          { "name": "Flask", "level": "Advanced", "highlight": false },
-          { "name": "RESTful API Architecture", "level": "Expert", "highlight": false },
-          { "name": "AsyncIO & Concurrency", "level": "Advanced", "highlight": false }
+          { "name": "Shell Scripting (Bash/sh, Solaris)", "level": "Expert", "highlight": true },
+          { "name": "Python Automation", "level": "Advanced", "highlight": true },
+          { "name": "Linux / Unix Internals", "level": "Expert", "highlight": true },
+          { "name": "Oracle SQL & PL/SQL Optimization", "level": "Advanced", "highlight": true },
+          { "name": "Oracle BRM (Billing Operations)", "level": "Advanced", "highlight": false },
+          { "name": "Incident RCA & MTTR Reduction", "level": "Expert", "highlight": false }
         ]
       }
     ]
   },
   "achievements": [
     {
-      "id": "tcs-codevita",
-      "title": "TCS CodeVita Contestant & Ranked Qualifier",
-      "category": "Competitive Programming",
-      "date": "2024",
-      "summary": "Qualified in Tata Consultancy Services' premier global competitive programming challenge, demonstrating high-speed algorithmic thinking, optimal memory-time complexities, and rigorous test case pass rates across graph theory, dynamic programming, and numerical computation.",
-      "badge": "Global Ranked Qualifier",
+      "id": "toil-elimination",
+      "title": "50+ Hours Monthly Operational Toil Eliminated",
+      "category": "Systems Automation & Operations",
+      "date": "2025",
+      "summary": "Engineered parallelized shell scripts utilizing time-based filtering and asynchronous background jobs to automate checksum operations for bi-weekly Oracle BRM releases at Mobily Infotech, eliminating 100+ manual CLI steps.",
+      "badge": "Automation Excellence",
       "impact": [
-        "Authored sub-second algorithmic solutions for complex combinatorial and graph-based problems",
-        "Demonstrated mastery over optimal Big-O time and space complexity constraints",
-        "Competed against tens of thousands of software engineering participants globally"
+        "Eliminated over 100 repetitive, error-prone manual CLI steps per bi-weekly release cycle",
+        "Saved 50+ hours of operational engineering toil every month across production environments",
+        "Streamlined release verification workflows and established standardized operating procedures (SOPs)"
       ]
     },
     {
-      "id": "multi-cloud-iac",
-      "title": "Multi-Cloud Infrastructure Automation with Terraform",
-      "category": "Cloud Architecture",
+      "id": "cloudops-platform",
+      "title": "CloudOps 5-Phase Architecture & 17s Disaster Recovery",
+      "category": "Cloud & Kubernetes Engineering",
       "date": "2024",
-      "summary": "Designed modular, reusable Terraform modules enabling deterministic zero-touch deployment of cloud environments across GCP (Cloud Run, Pub/Sub, BigQuery) and AWS (S3, IAM, VPC), enforcing least-privilege security and automated drift detection.",
-      "badge": "Infrastructure as Code",
+      "summary": "Architected an end-to-end cloud platform spanning modular Terraform on AWS, container CI/CD with GHCR, full-stack observability with Prometheus/Loki/Grafana, Argo Rollouts canary traffic shifting, and Velero disaster recovery.",
+      "badge": "Cloud-Native Platform",
       "impact": [
-        "100% reproducible environment provisioning reducing setup overhead from hours to minutes",
-        "Integrated state-locking with remote backends and CI/CD validation pipelines"
+        "Achieved 100% full namespace state restoration in 17 seconds following simulated catastrophic failure",
+        "Implemented automated Canary deployment traffic shifting (25% → 50% → 75% → 100%) with automated rollbacks",
+        "Codified 100% reproducible AWS infrastructure in Terraform with zero-cost validation safeguards"
       ]
     },
     {
-      "id": "query-cost-optimization",
-      "title": "Analytical Pipeline & Query Cost Optimization",
-      "category": "Data Engineering",
-      "date": "2024",
-      "summary": "Engineered partitioning, clustering, and materialized aggregations in BigQuery and PostgreSQL, achieving over 40% reduction in query processing compute overhead while boosting analytical query speeds by 3.5x.",
-      "badge": "Performance Engineering",
+      "id": "high-availability-sla",
+      "title": "24/7 Enterprise Production SLA & Root Cause Analysis",
+      "category": "Production Operations & Reliability",
+      "date": "2024 - Present",
+      "summary": "Provided frontline technical support and operations management for mission-critical enterprise billing platforms (Oracle BRM) at Mobily Infotech, resolving critical bottlenecks and drafting in-depth technical summaries.",
+      "badge": "High Availability & SRE",
       "impact": [
-        "Drastically optimized analytical query execution and reduced cloud billing consumption",
-        "Implemented schema evolution and idempotency standards across pipeline jobs"
+        "Consistently maintained strict enterprise SLA compliance across distributed production environments",
+        "Authored analytical Oracle SQL queries on large partitioned databases to detect telemetry anomalies before degradation",
+        "Conducted blameless post-incident RCA reviews that reduced Mean Time to Resolution (MTTR) for L2/L3 teams"
       ]
     }
   ],
   "projects": [
     {
-      "id": "cloud-native-etl-pipeline",
-      "title": "Cloud-Native Event-Driven ETL Pipeline",
-      "subtitle": "Serverless High-Throughput Ingestion & Analytics on GCP",
+      "id": "cloudops-platform",
+      "title": "CloudOps: Automated Cloud Infrastructure & Progressive Delivery",
+      "subtitle": "5-Phase Cloud Platform: AWS, Terraform, Kubernetes, Argo Rollouts & Grafana",
       "featured": true,
       "technologies": [
-        "Google Cloud Platform (GCP)",
+        "AWS",
         "Terraform",
-        "BigQuery",
-        "Cloud Run",
-        "Python",
-        "Cloud Pub/Sub",
+        "Kubernetes (k8s)",
+        "kind",
+        "Argo Rollouts",
+        "Docker",
         "GitHub Actions",
-        "Docker"
+        "Helm 3",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Velero",
+        "MinIO",
+        "Python"
       ],
-      "problemStatement": "Traditional batch ETL systems introduce latency, fragile cron dependencies, and high idle server costs when dealing with intermittent high-volume transaction records.",
-      "solutionArchitecture": "Built an event-driven, fully serverless pipeline using GCP Cloud Pub/Sub for asynchronous message queuing, containerized Cloud Run services running Python ingestion workers, and Google BigQuery with partition/cluster keys for near real-time analytics. Entire infrastructure is provisioned through modular Terraform code with GitHub Actions CI/CD validation.",
+      "problemStatement": "Modern engineering teams face fragile manual deployments, lack of canary deployment safeguards, high cloud test costs, fragmented observability, and inadequate disaster recovery procedures.",
+      "solutionArchitecture": "Architected and deployed an end-to-end, cost-conscious cloud platform built across 5 modular phases: (1) Modular AWS VPC & EKS in Terraform with S3 backend locking; (2) Hardened Python microservice with GitHub Actions CI/CD to GHCR; (3) Prometheus, Loki, Promtail, and Grafana-as-code observability; (4) Argo Rollouts canary traffic shifting (25% → 50% → 75% → 100%) on kind; (5) Velero & in-cluster MinIO backup executing 100% state restoration in 17 seconds.",
       "architectureHighlights": [
-        "Decoupled Pub/Sub messaging ensures zero message loss under burst traffic",
-        "Auto-scaling Cloud Run microservices scale to zero when idle for cost-efficiency",
-        "Partitioned & Clustered BigQuery tables optimized for low-latency BI queries",
-        "Automated Terraform CI/CD pipeline validates linting, plan, and apply stages"
+        "Modular Terraform VPC across 2 AZs with encrypted S3 state and native locking (use_lockfile)",
+        "Hardened non-root Python microservice with automated GitHub Actions CI/CD to GHCR",
+        "Resource-conscious Prometheus metrics scraping and single-binary Loki log streaming",
+        "Argo Rollouts automated multi-step Canary traffic shifting with rollback verification",
+        "Velero disaster recovery with 100% namespace restoration validated in 17 seconds"
       ],
       "metrics": [
-        { "label": "Ingestion Latency", "value": "< 1.5s" },
-        { "label": "Availability", "value": "99.9%" },
-        { "label": "IaC Automation", "value": "100%" }
+        { "label": "DR Recovery Time", "value": "17s" },
+        { "label": "Architecture Phases", "value": "5 Phases" },
+        { "label": "Canary Traffic Steps", "value": "25% → 100%" }
       ],
-      "githubUrl": "https://github.com/AhsanASid/cloud-native-etl-pipeline",
+      "githubUrl": "https://github.com/AhsanASid/Portfolio-Website",
       "demoUrl": null
     },
     {
-      "id": "distributed-data-processing-engine",
-      "title": "Distributed Data Processing Engine",
-      "subtitle": "High-Throughput Batch Processing with PySpark & Docker",
+      "id": "release-checksum-automation",
+      "title": "Enterprise Release Checksum & Operations Automation Engine",
+      "subtitle": "Parallelized Shell Automation for Oracle BRM Releases at Mobily Infotech",
       "featured": true,
       "technologies": [
-        "Python",
-        "Apache Spark / PySpark",
-        "Docker",
-        "AWS S3",
-        "Apache Airflow",
-        "PostgreSQL",
-        "Parquet"
+        "Shell Scripting (Bash/sh)",
+        "Solaris / Linux",
+        "Unix Internals",
+        "Process Automation",
+        "Cron",
+        "Oracle BRM"
       ],
-      "problemStatement": "Processing multi-gigabyte transactional datasets using single-node scripts caused frequent out-of-memory (OOM) failures, erratic execution times, and unrecoverable pipeline states upon step failures.",
-      "solutionArchitecture": "Designed a distributed transformation engine leveraging PySpark on containerized worker nodes. Ingests raw data from AWS S3, applies vectorized transformations, handles data deduplication and schema validation, writes columnar Parquet data to an analytical layer, and logs audit metrics into PostgreSQL. Coordinated via Apache Airflow DAGs with retry policies.",
+      "problemStatement": "Manual release verification for bi-weekly Oracle BRM releases involved over 100 repetitive CLI steps, creating severe operational friction, consuming over 50 hours of monthly toil, and risking human error on production billing platforms.",
+      "solutionArchitecture": "Engineered parallelized shell scripts utilizing time-based filtering and asynchronous background jobs to automate checksum operations and artifact integrity validation across distributed environments. Integrated automated logging, status verification, and failure alerting.",
       "architectureHighlights": [
-        "Distributed memory computation avoiding single-node RAM bottlenecks",
-        "Columnar Parquet compression reducing storage footprint by 65%",
-        "Airflow orchestrated Directed Acyclic Graphs (DAGs) with checkpointed retries",
-        "Containerized development environment replicating production clusters"
+        "Parallelized background workers executing simultaneous artifact checksum calculations",
+        "Time-based filtering mechanism targeting exact release windows without manual intervention",
+        "Eliminated 100+ manual CLI steps per release cycle while eliminating human execution errors",
+        "Standardized operational procedure adopted across engineering operations teams"
       ],
       "metrics": [
-        { "label": "Processing Speedup", "value": "4.2x Faster" },
-        { "label": "Storage Savings", "value": "65% (Parquet)" },
-        { "label": "Fault Recovery", "value": "Zero Data Loss" }
+        { "label": "Monthly Toil Saved", "value": "50+ hrs" },
+        { "label": "CLI Steps Automated", "value": "100+" },
+        { "label": "Release Accuracy", "value": "100%" }
       ],
-      "githubUrl": "https://github.com/AhsanASid/distributed-data-engine",
+      "githubUrl": "https://github.com/AhsanASid",
       "demoUrl": null
     },
     {
-      "id": "scalable-microservice-cache",
-      "title": "Scalable Microservice API & Caching Layer",
-      "subtitle": "High-Concurrency Backend Services with Sub-Millisecond Cache",
+      "id": "oracle-brm-sql-suite",
+      "title": "Oracle BRM Partitioned Database Telemetry & SQL Performance Suite",
+      "subtitle": "High-Availability Capacity Management & Incident Diagnosis at Mobily Infotech",
       "featured": true,
       "technologies": [
-        "FastAPI",
-        "Python",
-        "Redis",
-        "PostgreSQL",
-        "Docker",
-        "AsyncIO",
-        "Pydantic",
-        "SQLAlchemy 2.0"
+        "Oracle SQL",
+        "PL/SQL",
+        "Partitioned Databases",
+        "Oracle BRM",
+        "Unix CLI Utilities",
+        "Remedy",
+        "Jira"
       ],
-      "problemStatement": "High traffic web and analytics services encounter severe database connection exhaustion and latency spikes when serving frequently queried read-heavy data models.",
-      "solutionArchitecture": "Engineered an asynchronous FastAPI microservice backed by PostgreSQL with an intelligent multi-tier Redis caching layer. Implemented cache-aside pattern with TTL invalidation, connection pooling, non-blocking async DB drivers (asyncpg), and rigorous Pydantic data validation schemas.",
+      "problemStatement": "High-volume enterprise billing systems process massive transaction volumes where slow database queries, partition skews, or backend exceptions can cause SLA breaches and customer billing disruption.",
+      "solutionArchitecture": "Authored and optimized analytical Oracle SQL and PL/SQL queries on large partitioned databases to support capacity management, trace application telemetry, identify data anomalies before end-user service degradation, and formulate technical summaries for L2/L3 engineering escalations.",
       "architectureHighlights": [
-        "Asynchronous event loop handling concurrent I/O requests without thread blocking",
-        "Sub-millisecond Redis response time for cache hits with automated invalidation",
-        "Clean layered architecture: Router -> Service -> Repository -> Data Model",
-        "Docker Compose orchestration with health probes and isolated networks"
+        "Optimized analytical SQL queries on partitioned tables reducing diagnosis query runtime",
+        "Proactive capacity monitoring detecting storage and transaction bottlenecks in advance",
+        "Integrated Unix command-line utilities for rapid exception and error log correlation",
+        "Drafted detailed technical incident summaries that measurably reduced MTTR"
       ],
       "metrics": [
-        { "label": "Cache Hit Latency", "value": "< 12ms" },
-        { "label": "Throughput", "value": "5,000+ RPS" },
-        { "label": "Test Coverage", "value": "95% Unit/Integration" }
+        { "label": "Availability Support", "value": "24/7" },
+        { "label": "SLA Compliance", "value": "Strict" },
+        { "label": "MTTR Impact", "value": "Measurably Reduced" }
       ],
-      "githubUrl": "https://github.com/AhsanASid/scalable-microservice-cache",
+      "githubUrl": "https://github.com/AhsanASid",
       "demoUrl": null
     },
     {
-      "id": "algorithmic-problem-solving",
-      "title": "Competitive Programming & Algorithmic Repository",
-      "subtitle": "High-Efficiency Solutions for TCS CodeVita & Advanced Challenges",
+      "id": "hardened-container-cicd",
+      "title": "Hardened Python Microservice & DevSecOps Delivery Pipeline",
+      "subtitle": "Secure Containerization, Health Probes & GitHub Actions GHCR Workflows",
       "featured": true,
       "technologies": [
         "Python",
-        "C++",
-        "Data Structures",
-        "Dynamic Programming",
-        "Graph Theory",
-        "Computational Geometry",
-        "Combinatorics"
+        "Docker (Multi-stage)",
+        "GitHub Actions",
+        "GHCR",
+        "Kubernetes",
+        "Linux",
+        "GitOps"
       ],
-      "problemStatement": "Solving complex computational challenges requiring strict algorithmic optimization within sub-second execution windows and limited memory limits under competitive contest settings.",
-      "solutionArchitecture": "Curated repository of optimized algorithmic solutions developed during TCS CodeVita and competitive programming training. Includes modular implementations of Dijkstra, Floyd-Warshall, Segment Trees, Trie, Fenwick Trees, Dynamic Programming (Knapsack, Bitmasking, Interval DP), and custom test harnesses for edge-case benchmarking.",
+      "problemStatement": "Running containers as root with mutable tags introduces severe security vulnerabilities and deployment instability in orchestration clusters.",
+      "solutionArchitecture": "Developed a containerized Python microservice implementing non-root security boundaries, explicit `/healthz` liveness and readiness endpoints, and automated GitHub Actions workflows that publish immutable commit-SHA tagged images to GitHub Container Registry (GHCR).",
       "architectureHighlights": [
-        "Fast I/O templates in C++ and optimized generator patterns in Python",
-        "Comprehensive edge case suites and stress-test generators",
-        "Strict adherence to optimal O(V+E) graph algorithms and O(N log N) transforms",
-        "Documented proofs of correctness and asymptotic complexity analyses"
+        "Multi-stage Docker builds minimizing final image attack surface and runtime dependencies",
+        "Enforced non-root user execution conforming to Kubernetes security best practices",
+        "Immutable commit-SHA image tagging preventing tag mutation and drift",
+        "Automated GitHub Actions pipeline with build verification and registry publishing"
       ],
       "metrics": [
-        { "label": "Problems Solved", "value": "300+" },
-        { "label": "TCS CodeVita", "value": "Ranked Qualifier" },
-        { "label": "Runtime Efficiency", "value": "Top 5% Submissions" }
+        { "label": "Container Security", "value": "Non-Root" },
+        { "label": "Image Tagging", "value": "Immutable SHA" },
+        { "label": "CI/CD Pipeline", "value": "100% Automated" }
       ],
-      "githubUrl": "https://github.com/AhsanASid/algorithmic-problem-solving",
+      "githubUrl": "https://github.com/AhsanASid/Portfolio-Website",
       "demoUrl": null
     }
   ],
   "experience": [
     {
-      "role": "Software & Data Engineer",
-      "organization": "Engineering & Technology Projects",
-      "period": "2023 - Present",
-      "location": "India",
-      "type": "Full-Time / Engineering Projects",
+      "role": "Oracle BRM Administrator (Systems Operations & Automation)",
+      "organization": "Mobily Infotech India Pvt Ltd",
+      "period": "April 2025 – Present",
+      "location": "Bengaluru, Karnataka, India",
+      "type": "Full-Time",
       "responsibilities": [
-        "Architected serverless and containerized data pipelines ingesting multi-source datasets into cloud analytical stores (BigQuery, PostgreSQL).",
-        "Automated cloud infrastructure deployment on GCP and AWS using modular Terraform scripts, slashing deployment setup friction by 90%.",
-        "Built asynchronous high-throughput REST APIs with FastAPI, incorporating Redis cache-aside patterns and connection pooling.",
-        "Created CI/CD workflows using GitHub Actions for automated linting, test suites, container building, and deployment."
+        "Provide frontline technical support and operations management for critical enterprise billing platforms (Oracle BRM), ensuring high availability and strict SLA compliance across distributed production environments.",
+        "Engineered parallelized shell scripts utilizing time-based filtering and background jobs to automate checksum operations for bi-weekly releases, eliminating 100+ manual CLI steps and saving 50+ hours of operational toil monthly.",
+        "Participate in 24/7 on-call rotations, diagnosing complex production bottlenecks, executing blameless root cause analysis (RCA), and developing standard operating procedures (SOPs).",
+        "Author and optimize complex Oracle SQL queries on large partitioned databases to support capacity management and detect anomalies before end-user service degradation.",
+        "Championed incident and problem management workflows, drafting detailed technical summaries for L2/L3 engineering teams that reduced Mean Time to Resolution (MTTR)."
+      ]
+    },
+    {
+      "role": "IT Operations Intern",
+      "organization": "Mobily Infotech India Pvt Ltd",
+      "period": "August 2024 – April 2025",
+      "location": "Bengaluru, Karnataka, India",
+      "type": "Internship",
+      "responsibilities": [
+        "Supported day-to-day operations, application telemetry monitoring, and release validation for enterprise billing software.",
+        "Diagnosed backend system errors and database exceptions using Unix command-line utilities and analytical SQL queries.",
+        "Assisted release management by executing deployment workflows and reviewing system integration documentation (HLD/LLD).",
+        "Maintained strict adherence to operational SLAs, gaining hands-on foundation in high-availability enterprise environments."
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Technology in Computer Science & Engineering",
-      "institution": "University / Institute of Technology",
-      "period": "2020 - 2024",
-      "details": "Specialized in Distributed Systems, Data Structures & Algorithms, Cloud Computing, and Database Management Systems."
+      "degree": "Bachelor of Technology (B.Tech) – Information Technology",
+      "institution": "Shri Ramswaroop Memorial College of Engineering and Management",
+      "location": "Lucknow, Uttar Pradesh, India",
+      "period": "2020 – 2024",
+      "details": "Specialized in Computer Networks, Operating Systems, Database Management Systems, Cloud Fundamentals, and Software Engineering."
     }
   ],
   "certifications": [
     {
-      "title": "TCS CodeVita Contestant & Ranked Qualifier",
-      "issuer": "Tata Consultancy Services",
+      "title": "AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)",
+      "issuer": "Amazon Web Services (AWS)",
       "year": "2024",
-      "badge": "Competitive Programming"
+      "badge": "Cloud Storage & AWS"
     },
     {
-      "title": "Cloud Architecture & Data Engineering Specialization",
-      "issuer": "GCP / AWS / Coursera",
+      "title": "Python Real-World Applications (100 Projects Portfolio): Automation & Scripting",
+      "issuer": "Udemy",
       "year": "2024",
-      "badge": "Cloud & Data"
+      "badge": "Python Automation"
     },
     {
-      "title": "HashiCorp Terraform Associate (Curriculum & Practice)",
-      "issuer": "HashiCorp / Cloud Practice",
+      "title": "Big Data Foundations – Level 1 & Hadoop Administration",
+      "issuer": "IBM",
       "year": "2024",
-      "badge": "Infrastructure as Code"
+      "badge": "Big Data & Hadoop"
+    },
+    {
+      "title": "Career Essentials in Generative AI",
+      "issuer": "Microsoft & LinkedIn",
+      "year": "2024",
+      "badge": "AI & Cloud Tools"
     }
   ],
   "siteConfig": {
@@ -307,11 +335,11 @@
     "theme": {
       "mode": "dark",
       "accentColor": "cyan",
-      "secondaryColor": "blue"
+      "secondaryColor": "emerald"
     },
     "footer": {
-      "copyright": "© 2026 Ahsan Ahmad Siddiqui. Engineered with speed and precision.",
-      "tagline": "Built with modern cloud-native & data engineering principles."
+      "copyright": "© 2026 Ahsan Ahmad Siddiqui. Engineered with reliability and precision.",
+      "tagline": "DevOps Engineer | Cloud Infrastructure & Systems Automation"
     }
   }
 }
