@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f17">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Ahsan Ahmad Siddiqui | Software & Data Engineer | Cloud & Infrastructure Specialist</title>
+  <meta name="description" content="Portfolio of Ahsan Ahmad Siddiqui - Software & Data Engineer specializing in modern cloud architectures, distributed ETL/ELT pipelines, Terraform (IaC), and high-throughput Python backend systems.">
+  <meta name="author" content="Ahsan Ahmad Siddiqui">
+  <meta name="keywords" content="Ahsan Ahmad Siddiqui, Software Engineer, Data Engineer, Cloud Engineer, Terraform, GCP, AWS, BigQuery, PySpark, FastAPI, Distributed Systems, TCS CodeVita Qualifier">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahsanasid.github.io/">
+  <meta property="og:title" content="Ahsan Ahmad Siddiqui | Software & Data Engineer">
+  <meta property="og:description" content="Architecting robust data pipelines, scalable cloud infrastructure, and high-performance software solutions.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f17'/><path d='M30 70 L50 25 L70 70 M38 52 L62 52' stroke='%2306b6d4' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <!-- Progressive Enhancement / No-JS Fallback -->
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      @media (max-width: 1023px) {
+        .nav-toggle { display: none !important; }
+        .primary-nav { display: block !important; }
+        .primary-nav .nav-list { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; padding: 0.75rem 0; }
+      }
+      .back-to-top-floating { display: none !important; }
+    </style>
+  </noscript>
+</head>
+<body id="top" class="bg-obsidian text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+  <!-- Screen reader skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Glow Accents -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER & NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#top" class="brand-logo" aria-label="Ahsan Ahmad Siddiqui Portfolio Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg aria-hidden="true" class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="url(#logo-grad)" />
+            <path d="M12 28L20 10L28 28M15 21H25" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#06b6d4" />
+                <stop offset="1" stop-color="#10b981" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">Ahsan Ahmad Siddiqui</span>
+          <span class="brand-role">Software & Data Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-num">02.</span> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><span class="nav-num">03.</span> Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link"><span class="nav-num">04.</span> Achievements</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link"><span class="nav-num">05.</span> Timeline</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-num">06.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <!-- Live status pill -->
+        <div class="status-pill status-pill-sm hidden-mobile" title="Status: Actively seeking Software & Data Engineering Opportunities">
+          <span class="status-dot pulse" aria-hidden="true"></span>
+          <span class="status-text">Available</span>
+        </div>
+
+        <!-- GitHub direct link -->
+        <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="btn btn-icon-ghost" aria-label="View Ahsan's GitHub Profile">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="mobile-drawer" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link"><span class="nav-num">01.</span> About & Philosophy</a></li>
+          <li><a href="#skills" class="mobile-nav-link"><span class="nav-num">02.</span> Technical Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link"><span class="nav-num">03.</span> Featured Projects</a></li>
+          <li><a href="#achievements" class="mobile-nav-link"><span class="nav-num">04.</span> Achievements & Honors</a></li>
+          <li><a href="#experience" class="mobile-nav-link"><span class="nav-num">05.</span> Career & Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span class="nav-num">06.</span> Contact Details</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <div class="status-pill status-pill-sm">
+            <span class="status-dot pulse" aria-hidden="true"></span>
+            <span class="status-text">Actively Seeking Opportunities</span>
+          </div>
+          <div class="mobile-socials">
+            <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub">
+              <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/ahsanasid" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn">
+              <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:ahsanasiddiqui.dev@gmail.com" class="social-chip" aria-label="Email">
+              <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT CONTAINER -->
+  <!-- ========================================================================= -->
+  <main id="main-content" class="main-content" tabindex="-1">
+
+    <!-- ======================================================================= -->
+    <!-- HERO SECTION -->
+    <!-- ======================================================================= -->
+    <section class="hero-section section" id="hero" aria-label="Introduction and Overview">
+      <div class="container hero-container">
+        
+        <!-- Live Status Badge -->
+        <div class="hero-badge-wrapper reveal" data-reveal="fade-down">
+          <div class="status-pill status-pill-hero">
+            <span class="status-dot pulse" aria-hidden="true"></span>
+            <span class="status-text">Actively Seeking Software & Data Engineering Opportunities</span>
+            <span class="status-sub hidden-mobile">| Available Immediately</span>
+          </div>
+        </div>
+
+        <!-- Hero Headline & Intro -->
+        <div class="hero-content">
+          <p class="hero-greeting mono reveal" data-reveal="fade-up" data-delay="100">
+            <span class="accent-terminal">&gt;</span> Hello world, my name is
+          </p>
+          
+          <h1 class="hero-title reveal" data-reveal="fade-up" data-delay="200">
+            <span class="title-name">Ahsan Ahmad Siddiqui.</span>
+            <span class="title-sub text-gradient-hero">Engineering high-throughput data & cloud systems.</span>
+          </h1>
+
+          <!-- Role Typing Pill Hook -->
+          <div class="hero-role-pill reveal" data-reveal="fade-up" data-delay="300">
+            <span class="role-prefix mono">Specializing in:</span>
+            <span class="typing-text-wrapper">
+              <span class="typing-text mono font-semibold text-cyan-400" 
+                    data-words='["Software & Data Engineering", "Cloud & Infrastructure as Code (Terraform)", "Distributed Pipelines (PySpark & BigQuery)", "High-Concurrency Backend Microservices", "TCS CodeVita Algorithmic Problem Solving"]'
+                    data-typing-speed="80" 
+                    data-backspace-speed="40" 
+                    data-pause-delay="2200">
+                Software & Data Engineering
+              </span>
+              <span class="cursor-blink" aria-hidden="true">|</span>
+            </span>
+          </div>
+
+          <!-- Summary Elevator Statement -->
+          <p class="hero-description reveal" data-reveal="fade-up" data-delay="400">
+            Results-driven engineer architecting modern cloud-native architectures, resilient distributed ETL/ELT workflows across <strong>GCP</strong> and <strong>AWS</strong>, and automated multi-cloud infrastructure with <strong>Terraform</strong>. Driven by algorithmic rigor and zero-downtime engineering.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="hero-actions reveal" data-reveal="fade-up" data-delay="500">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <span>Explore Featured Projects</span>
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-cta-github">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Impact Metrics Grid (4 Cards) -->
+        <div class="hero-metrics-grid reveal" data-reveal="fade-up" data-delay="600">
+          
+          <!-- Metric 1 -->
+          <div class="metric-card glass-panel" data-metric="throughput">
+            <div class="metric-icon-box text-cyan-400" aria-hidden="true">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div class="metric-body">
+              <div class="metric-value-wrap">
+                <span class="metric-value counter mono text-gradient-cyan" 
+                      data-target="10" 
+                      data-prefix="" 
+                      data-suffix="M+">10M+</span>
+              </div>
+              <span class="metric-label">Pipeline Throughput</span>
+              <p class="metric-desc">Daily records processed via automated ETL/ELT pipelines</p>
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="metric-card glass-panel" data-metric="codevita">
+            <div class="metric-icon-box text-amber-400" aria-hidden="true">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="metric-body">
+              <div class="metric-value-wrap">
+                <span class="metric-value text-amber-300 font-bold">CodeVita</span>
+              </div>
+              <span class="metric-label">TCS Global Qualifier</span>
+              <p class="metric-desc">Ranked contender solving high-complexity graph & DP problems</p>
+            </div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="metric-card glass-panel" data-metric="iac">
+            <div class="metric-icon-box text-emerald-400" aria-hidden="true">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="metric-body">
+              <div class="metric-value-wrap">
+                <span class="metric-value counter mono text-gradient-emerald" 
+                      data-target="100" 
+                      data-prefix="" 
+                      data-suffix="%">100%</span>
+              </div>
+              <span class="metric-label">Cloud Provisioning</span>
+              <p class="metric-desc">Zero-touch infrastructure automated via Terraform (IaC)</p>
+            </div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="metric-card glass-panel" data-metric="latency">
+            <div class="metric-icon-box text-blue-400" aria-hidden="true">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="metric-body">
+              <div class="metric-value-wrap">
+                <span class="metric-value counter mono text-gradient-cyan" 
+                      data-target="15" 
+                      data-prefix="< " 
+                      data-suffix="ms">&lt; 15ms</span>
+              </div>
+              <span class="metric-label">API Latency</span>
+              <p class="metric-desc">Sub-millisecond Redis caching on critical microservice endpoints</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">01.</span> DISCOVERY</span>
+          <h2 class="section-title" id="about-heading">About & Engineering Philosophy</h2>
+          <p class="section-subtitle">Bridging data-intensive systems, robust infrastructure, and algorithmic efficiency.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative & Pillars Column -->
+          <div class="about-story-col reveal" data-reveal="slide-right">
+            <div class="prose">
+              <p class="lead-text">
+                I am a <strong>Software and Data Engineer</strong> driven by a core principle: data systems must be resilient, reproducible, and computationally optimal under real-world constraints.
+              </p>
+              <p>
+                My engineering background centers on designing end-to-end data pipelines that ingest and transform millions of records, codifying scalable multi-cloud infrastructure with <strong>Terraform</strong> across Google Cloud Platform (GCP) and AWS, and architecting asynchronous microservices with <strong>FastAPI</strong> and <strong>Redis</strong>.
+              </p>
+              <p>
+                Having qualified in the premier global competitive programming arena of <strong>TCS CodeVita</strong>, I approach every system design problem with mathematical rigor—evaluating asymptotic time complexities, spatial efficiency, and graceful degradation from the start.
+              </p>
+            </div>
+
+            <!-- Engineering Pillars -->
+            <div class="pillars-container">
+              <h3 class="pillars-heading mono">Core Engineering Principles</h3>
+              
+              <div class="pillar-card glass-panel">
+                <div class="pillar-num mono text-cyan-400">01</div>
+                <div class="pillar-content">
+                  <h4 class="pillar-title">Computational Rigor & Algorithmic Design</h4>
+                  <p class="pillar-text">Mastery over data structures, dynamic programming, and graph algorithms ensures software remains performant at massive scale rather than hitting scaling walls.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card glass-panel">
+                <div class="pillar-num mono text-emerald-400">02</div>
+                <div class="pillar-content">
+                  <h4 class="pillar-title">100% Immutable Infrastructure as Code</h4>
+                  <p class="pillar-text">Zero console drift. Every cloud resource, IAM policy, network subnet, and storage bucket is declarative, modularized, version-controlled, and tested in CI/CD.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card glass-panel">
+                <div class="pillar-num mono text-blue-400">03</div>
+                <div class="pillar-content">
+                  <h4 class="pillar-title">Event-Driven Resilience & Idempotency</h4>
+                  <p class="pillar-text">Decoupled queue buffers, dead-letter routing, partitioned analytical warehouses, and retry policies ensure zero data loss during burst traffic or upstream outages.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Technical Specs Terminal Card -->
+          <div class="about-terminal-col reveal" data-reveal="slide-left">
+            <div class="terminal-card glass-panel">
+              
+              <!-- Terminal Header Bar -->
+              <div class="terminal-header">
+                <div class="terminal-controls" aria-hidden="true">
+                  <span class="control-dot close"></span>
+                  <span class="control-dot minimize"></span>
+                  <span class="control-dot maximize"></span>
+                </div>
+                <div class="terminal-title mono">ahsan@system-spec:~/profile</div>
+                <div class="terminal-badge mono text-emerald-400">● online</div>
+              </div>
+
+              <!-- Terminal Content -->
+              <div class="terminal-body mono">
+                <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></div>
+                
+                <div class="terminal-json">
+                  <span class="json-brace">{</span>
+                  <div class="json-indent">
+                    <div><span class="json-key">"engineer"</span>: <span class="json-str">"Ahsan Ahmad Siddiqui"</span>,</div>
+                    <div><span class="json-key">"role"</span>: <span class="json-str">"Software & Data Engineer"</span>,</div>
+                    <div><span class="json-key">"location"</span>: <span class="json-str">"India (Open to Remote & Global Relocation)"</span>,</div>
+                    <div><span class="json-key">"status"</span>: <span class="json-str text-emerald-400">"Actively seeking Opportunities"</span>,</div>
+                    <div><span class="json-key">"availability"</span>: <span class="json-str">"Immediate Full-Time"</span>,</div>
+                    <div><span class="json-key">"cloudFocus"</span>: <span class="json-arr">[</span><span class="json-str">"GCP"</span>, <span class="json-str">"AWS"</span>, <span class="json-str">"Terraform"</span><span class="json-arr">]</span>,</div>
+                    <div><span class="json-key">"dataFocus"</span>: <span class="json-arr">[</span><span class="json-str">"BigQuery"</span>, <span class="json-str">"PySpark"</span>, <span class="json-str">"Airflow"</span><span class="json-arr">]</span>,</div>
+                    <div><span class="json-key">"backendFocus"</span>: <span class="json-arr">[</span><span class="json-str">"FastAPI"</span>, <span class="json-str">"Python"</span>, <span class="json-str">"PostgreSQL"</span>, <span class="json-str">"Redis"</span><span class="json-arr">]</span>,</div>
+                    <div><span class="json-key">"algorithmicRanking"</span>: <span class="json-str text-amber-300">"TCS CodeVita Ranked Qualifier"</span></div>
+                  </div>
+                  <span class="json-brace">}</span>
+                </div>
+
+                <div class="terminal-line mt-4"><span class="t-prompt">$</span> <span class="t-cmd">ping -c 1 live-status.ahsanasid</span></div>
+                <div class="terminal-output text-slate-400">64 bytes from live-status: seq=1 ttl=64 time=0.84ms</div>
+                <div class="terminal-line mt-2"><span class="t-prompt">$</span> <span class="cursor-blink">_</span></div>
+              </div>
+
+              <!-- Quick Specs Highlights Footer -->
+              <div class="terminal-footer">
+                <div class="spec-item">
+                  <span class="spec-label">Education</span>
+                  <span class="spec-val">B.Tech Computer Science (2020 - 2024)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Direct Email</span>
+                  <a href="mailto:ahsanasiddiqui.dev@gmail.com" class="spec-link">ahsanasiddiqui.dev@gmail.com</a>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">GitHub</span>
+                  <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="spec-link">github.com/AhsanASid</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- TECHNICAL SKILLS SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">02.</span> CAPABILITIES</span>
+          <h2 class="section-title" id="skills-heading">Technical Skills & Toolchain</h2>
+          <p class="section-subtitle">Categorized competencies spanning systems programming, distributed data architectures, cloud infrastructure, and backend services.</p>
+        </div>
+
+        <!-- Skills Category Cards Grid -->
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming & Core -->
+          <div class="skill-category-card glass-panel reveal" data-reveal="fade-up" data-delay="100">
+            <div class="category-header">
+              <div class="category-icon text-cyan-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Programming & Core</h3>
+                <p class="category-desc">Foundational languages for systems programming, data pipelines, and automation scripts.</p>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag skill-highlight" title="Python: Expert — AsyncIO, multiprocessing, data frameworks, API development">
+                <span class="tag-star" aria-hidden="true">★</span> Python <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="SQL: Expert — Advanced analytical queries, window functions, indexing, partitioning">
+                <span class="tag-star" aria-hidden="true">★</span> SQL <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="C++: Advanced — STL, memory efficiency, competitive programming algorithms">
+                <span class="tag-star" aria-hidden="true">★</span> C++ <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag" title="Bash / Shell: Advanced — Automation scripting, Linux environment management">
+                Bash / Shell <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag" title="JavaScript: Intermediate — Web API consumption and modern interfaces">
+                JavaScript <span class="tag-level">Intermediate</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Engineering & Big Data -->
+          <div class="skill-category-card glass-panel reveal" data-reveal="fade-up" data-delay="200">
+            <div class="category-header">
+              <div class="category-icon text-emerald-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2C6.48 2 2 4.02 2 6.5v11C2 19.98 6.48 22 12 22s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2z"></path>
+                  <path d="M2 12c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5"></path>
+                  <path d="M2 6.5C2 8.98 4.48 11 12 11s10-2.02 10-4.5"></path>
+                </svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Data Engineering & Big Data</h3>
+                <p class="category-desc">Architectures, batch/stream processing frameworks, and analytical warehouses.</p>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag skill-highlight" title="ETL / ELT Pipelines: Expert — End-to-end design, batch/streaming, fault tolerance">
+                <span class="tag-star" aria-hidden="true">★</span> ETL / ELT Pipelines <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Google BigQuery: Expert — Partitioned/clustered tables, cost & performance tuning">
+                <span class="tag-star" aria-hidden="true">★</span> Google BigQuery <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Apache Airflow: Advanced — DAG authoring, orchestration, automated alerting">
+                <span class="tag-star" aria-hidden="true">★</span> Apache Airflow <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="PySpark / Spark: Advanced — Distributed batch computation, in-memory parallelization">
+                <span class="tag-star" aria-hidden="true">★</span> PySpark / Spark <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Data Modeling & Warehousing: Advanced — Star/Snowflake schemas, dimensional modeling">
+                <span class="tag-star" aria-hidden="true">★</span> Data Modeling <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag" title="Pandas & NumPy: Expert — In-depth exploratory data analysis and vectorized transforms">
+                Pandas &amp; NumPy <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag" title="dbt: Intermediate — In-warehouse transformations, testing, documentation">
+                dbt (Data Build Tool) <span class="tag-level">Intermediate</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud & DevOps (IaC) -->
+          <div class="skill-category-card glass-panel reveal" data-reveal="fade-up" data-delay="300">
+            <div class="category-header">
+              <div class="category-icon text-cyan-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Cloud &amp; DevOps (IaC)</h3>
+                <p class="category-desc">Cloud-native services, automated provisioning, container orchestration, and CI/CD.</p>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag skill-highlight" title="Google Cloud Platform: Expert — Cloud Run, BigQuery, Pub/Sub, Storage, IAM, VPC">
+                <span class="tag-star" aria-hidden="true">★</span> Google Cloud (GCP) <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Terraform: Expert — Declarative multi-cloud provisioning, reusable modules, state locking">
+                <span class="tag-star" aria-hidden="true">★</span> Terraform (IaC) <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Amazon Web Services: Advanced — S3, EC2, IAM, Lambda, RDS, CloudWatch">
+                <span class="tag-star" aria-hidden="true">★</span> AWS <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Docker: Advanced — Multi-stage builds, minimal production images, Compose">
+                <span class="tag-star" aria-hidden="true">★</span> Docker &amp; Containers <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="GitHub Actions: Expert — Automated linting, test suites, container builds, CI/CD">
+                <span class="tag-star" aria-hidden="true">★</span> GitHub Actions CI/CD <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag" title="Linux / Systems Administration: Advanced — Internals, performance, networking">
+                Linux Systems <span class="tag-level">Advanced</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Category 4: Backend & Systems Architecture -->
+          <div class="skill-category-card glass-panel reveal" data-reveal="fade-up" data-delay="400">
+            <div class="category-header">
+              <div class="category-icon text-blue-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Backend &amp; API Engineering</h3>
+                <p class="category-desc">Scalable REST APIs, asynchronous execution, and high-performance in-memory caching.</p>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-tag skill-highlight" title="FastAPI: Expert — Asynchronous REST microservices, Pydantic schemas, dependency injection">
+                <span class="tag-star" aria-hidden="true">★</span> FastAPI <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="PostgreSQL: Advanced — Relational schema design, async drivers (asyncpg), connection pooling">
+                <span class="tag-star" aria-hidden="true">★</span> PostgreSQL <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag skill-highlight" title="Redis: Advanced — In-memory caching, cache-aside pattern, sub-millisecond response">
+                <span class="tag-star" aria-hidden="true">★</span> Redis Cache <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag" title="Flask: Advanced — Lightweight web services, internal utilities">
+                Flask <span class="tag-level">Advanced</span>
+              </span>
+              <span class="skill-tag" title="RESTful API Architecture: Expert — Clean layered architecture, Twelve-Factor">
+                RESTful Architecture <span class="tag-level">Expert</span>
+              </span>
+              <span class="skill-tag" title="AsyncIO & Concurrency: Advanced — Non-blocking I/O event loops">
+                AsyncIO Concurrency <span class="tag-level">Advanced</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- FEATURED PROJECTS SHOWCASE SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">03.</span> ARCHITECTURE &amp; CODE</span>
+          <h2 class="section-title" id="projects-heading">Featured Engineering Projects</h2>
+          <p class="section-subtitle">Real-world production architectures: serverless streaming pipelines, distributed PySpark clusters, high-concurrency microservices, and algorithmic solutions.</p>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- ================================================================= -->
+          <!-- Project 1: Cloud-Native Event-Driven ETL Pipeline -->
+          <!-- ================================================================= -->
+          <article class="project-card glass-panel reveal" data-reveal="fade-up" id="project-cloud-etl">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-badge-row">
+                  <span class="badge badge-featured">Featured Project</span>
+                  <span class="badge badge-category">Cloud Data Engineering</span>
+                </div>
+                <h3 class="project-title">Cloud-Native Event-Driven ETL Pipeline</h3>
+                <p class="project-subtitle">Serverless High-Throughput Ingestion &amp; Analytics on GCP</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AhsanASid/cloud-native-etl-pipeline" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Cloud-Native ETL Pipeline repository on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Problem & Solution Overview -->
+            <div class="project-body-grid">
+              <div class="project-narrative">
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-cyan-400">Problem Statement</h4>
+                  <p>Traditional batch ETL systems introduce latency, fragile cron dependencies, and high idle server costs when dealing with intermittent high-volume transaction records.</p>
+                </div>
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-emerald-400">Solution &amp; Architecture</h4>
+                  <p>Constructed an event-driven, fully serverless pipeline using <strong>GCP Cloud Pub/Sub</strong> for asynchronous message queuing, containerized <strong>Cloud Run</strong> services running Python ingestion workers, and <strong>Google BigQuery</strong> with partition/cluster keys for near real-time analytics. Entire cloud footprint is 100% codified in <strong>Terraform</strong> with GitHub Actions CI/CD validation.</p>
+                </div>
+              </div>
+
+              <!-- Mini Architecture Flow Visualization -->
+              <div class="project-arch-flow" aria-label="Architecture Diagram: Producers to PubSub, Cloud Run, Cloud Storage, BigQuery, and BI">
+                <div class="arch-flow-header mono">Architecture Flow &bull; Serverless Event Stream</div>
+                <div class="arch-nodes-wrap">
+                  <div class="arch-node">
+                    <span class="arch-node-icon">⚡</span>
+                    <span class="arch-node-text">Data Producers</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node">
+                    <span class="arch-node-icon">📬</span>
+                    <span class="arch-node-text">GCP Pub/Sub</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight">
+                    <span class="arch-node-icon">🚀</span>
+                    <span class="arch-node-text">Cloud Run (Python)</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight-emerald">
+                    <span class="arch-node-icon">📊</span>
+                    <span class="arch-node-text">BigQuery Warehouse</span>
+                  </div>
+                </div>
+                <div class="arch-iac-bar mono">
+                  <span class="iac-tag">Terraform Modules</span>
+                  <span class="iac-tag">GitHub Actions CI/CD</span>
+                  <span class="iac-tag">Zero Console Drift</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture Bullet Highlights -->
+            <div class="project-highlights">
+              <ul class="highlight-list">
+                <li><span class="hl-check">✔</span> Decoupled Pub/Sub messaging ensures zero message loss under burst traffic conditions.</li>
+                <li><span class="hl-check">✔</span> Auto-scaling Cloud Run microservices scale to zero when idle, cutting infrastructure overhead.</li>
+                <li><span class="hl-check">✔</span> Partitioned and Clustered BigQuery tables optimized for low-latency BI queries and minimal scan costs.</li>
+                <li><span class="hl-check">✔</span> Automated Terraform CI/CD pipeline validates linting, plan, and apply stages automatically.</li>
+              </ul>
+            </div>
+
+            <!-- Metrics and Tech Tags Footer -->
+            <div class="project-footer">
+              <div class="project-metrics">
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-cyan-400">&lt; 1.5s</span>
+                  <span class="p-metric-lbl">Ingestion Latency</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-emerald-400">99.9%</span>
+                  <span class="p-metric-lbl">Availability</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-blue-400">100%</span>
+                  <span class="p-metric-lbl">IaC Automation</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">GCP</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">BigQuery</span>
+                <span class="tech-tag">Cloud Run</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pub/Sub</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GitHub Actions</span>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ================================================================= -->
+          <!-- Project 2: Distributed Data Processing Engine -->
+          <!-- ================================================================= -->
+          <article class="project-card glass-panel reveal" data-reveal="fade-up" id="project-distributed-spark">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-badge-row">
+                  <span class="badge badge-featured">Featured Project</span>
+                  <span class="badge badge-category">Big Data Processing</span>
+                </div>
+                <h3 class="project-title">Distributed Data Processing Engine</h3>
+                <p class="project-subtitle">High-Throughput Batch Processing with PySpark &amp; Docker</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AhsanASid/distributed-data-engine" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Distributed Data Processing Engine repository on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-narrative">
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-cyan-400">Problem Statement</h4>
+                  <p>Processing multi-gigabyte transactional datasets using single-node pandas scripts caused frequent out-of-memory (OOM) failures, erratic execution times, and unrecoverable pipeline states upon step failures.</p>
+                </div>
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-emerald-400">Solution &amp; Architecture</h4>
+                  <p>Designed a distributed transformation engine leveraging <strong>PySpark</strong> on containerized worker nodes. Ingests raw data from <strong>AWS S3</strong>, applies vectorized transformations, handles data deduplication and schema validation, writes columnar <strong>Parquet</strong> files, and logs audit metrics into <strong>PostgreSQL</strong> orchestrated via <strong>Apache Airflow DAGs</strong>.</p>
+                </div>
+              </div>
+
+              <!-- Mini Architecture Flow -->
+              <div class="project-arch-flow" aria-label="Architecture Diagram: AWS S3 to Airflow, PySpark Worker Nodes, Parquet, and Postgres Metadata">
+                <div class="arch-flow-header mono">Architecture Flow &bull; Distributed Batch Compute</div>
+                <div class="arch-nodes-wrap">
+                  <div class="arch-node">
+                    <span class="arch-node-icon">📦</span>
+                    <span class="arch-node-text">AWS S3 Raw</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight">
+                    <span class="arch-node-icon">🌀</span>
+                    <span class="arch-node-text">Airflow DAGs</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight">
+                    <span class="arch-node-icon">🔥</span>
+                    <span class="arch-node-text">PySpark Workers</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight-emerald">
+                    <span class="arch-node-icon">🗂️</span>
+                    <span class="arch-node-text">S3 Parquet + PG</span>
+                  </div>
+                </div>
+                <div class="arch-iac-bar mono">
+                  <span class="iac-tag">Vectorized Cleaning</span>
+                  <span class="iac-tag">65% Compression</span>
+                  <span class="iac-tag">Checkpoint Retries</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-highlights">
+              <ul class="highlight-list">
+                <li><span class="hl-check">✔</span> Distributed in-memory computation eliminating single-node RAM bottlenecks entirely.</li>
+                <li><span class="hl-check">✔</span> Columnar Snappy Parquet compression reducing storage footprint by 65%.</li>
+                <li><span class="hl-check">✔</span> Apache Airflow orchestrated DAGs with checkpointed stage retries and SLA monitoring.</li>
+                <li><span class="hl-check">✔</span> Containerized development environment closely replicating production clusters.</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-metrics">
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-cyan-400">4.2x Faster</span>
+                  <span class="p-metric-lbl">Processing Speedup</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-emerald-400">65%</span>
+                  <span class="p-metric-lbl">Storage Savings</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-blue-400">Zero Loss</span>
+                  <span class="p-metric-lbl">Fault Resilience</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PySpark</span>
+                <span class="tech-tag">Apache Spark</span>
+                <span class="tech-tag">Apache Airflow</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Parquet</span>
+                <span class="tech-tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ================================================================= -->
+          <!-- Project 3: Scalable Microservice API & Caching Layer -->
+          <!-- ================================================================= -->
+          <article class="project-card glass-panel reveal" data-reveal="fade-up" id="project-microservice-cache">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-badge-row">
+                  <span class="badge badge-featured">Featured Project</span>
+                  <span class="badge badge-category">Backend &amp; Distributed Systems</span>
+                </div>
+                <h3 class="project-title">Scalable Microservice API &amp; Caching Layer</h3>
+                <p class="project-subtitle">High-Concurrency Backend Services with Sub-Millisecond Cache</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AhsanASid/scalable-microservice-cache" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Scalable Microservice API & Caching Layer repository on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-narrative">
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-cyan-400">Problem Statement</h4>
+                  <p>High traffic web and analytics services encounter severe database connection exhaustion and latency spikes when serving frequently queried read-heavy data models.</p>
+                </div>
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-emerald-400">Solution &amp; Architecture</h4>
+                  <p>Engineered an asynchronous <strong>FastAPI</strong> microservice backed by <strong>PostgreSQL</strong> with an intelligent multi-tier <strong>Redis</strong> caching layer. Implemented cache-aside pattern with TTL invalidation, connection pooling, non-blocking async DB drivers (asyncpg), and rigorous Pydantic schemas.</p>
+                </div>
+              </div>
+
+              <!-- Mini Architecture Flow -->
+              <div class="project-arch-flow" aria-label="Architecture Diagram: FastAPI Gateway, Redis Cache-Aside, PostgreSQL Persistence">
+                <div class="arch-flow-header mono">Architecture Flow &bull; Cache-Aside Pattern</div>
+                <div class="arch-nodes-wrap">
+                  <div class="arch-node">
+                    <span class="arch-node-icon">🌐</span>
+                    <span class="arch-node-text">Client Request</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight">
+                    <span class="arch-node-icon">⚡</span>
+                    <span class="arch-node-text">FastAPI Gateway</span>
+                  </div>
+                  <div class="arch-arrow">↔</div>
+                  <div class="arch-node arch-highlight-emerald">
+                    <span class="arch-node-icon">💾</span>
+                    <span class="arch-node-text">Redis Cache (&lt;12ms)</span>
+                  </div>
+                  <div class="arch-arrow">↔</div>
+                  <div class="arch-node">
+                    <span class="arch-node-icon">🗄️</span>
+                    <span class="arch-node-text">PostgreSQL DB</span>
+                  </div>
+                </div>
+                <div class="arch-iac-bar mono">
+                  <span class="iac-tag">Cache Hit &lt; 12ms</span>
+                  <span class="iac-tag">5,000+ RPS</span>
+                  <span class="iac-tag">95% Test Coverage</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-highlights">
+              <ul class="highlight-list">
+                <li><span class="hl-check">✔</span> Asynchronous event loop handling concurrent I/O requests without thread blocking.</li>
+                <li><span class="hl-check">✔</span> Sub-millisecond Redis response time for cache hits with automated mutation invalidation.</li>
+                <li><span class="hl-check">✔</span> Clean layered architecture: Router &rarr; Service &rarr; Repository &rarr; Data Model.</li>
+                <li><span class="hl-check">✔</span> Docker Compose orchestration with automated health probes and non-root execution.</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-metrics">
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-cyan-400">&lt; 12ms</span>
+                  <span class="p-metric-lbl">Cache Hit Latency</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-emerald-400">5,000+ RPS</span>
+                  <span class="p-metric-lbl">Throughput</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-blue-400">95%</span>
+                  <span class="p-metric-lbl">Test Coverage</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker Compose</span>
+                <span class="tech-tag">AsyncIO</span>
+                <span class="tech-tag">Pydantic</span>
+                <span class="tech-tag">SQLAlchemy 2.0</span>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ================================================================= -->
+          <!-- Project 4: Competitive Programming & Algorithmic Repository -->
+          <!-- ================================================================= -->
+          <article class="project-card glass-panel reveal" data-reveal="fade-up" id="project-algorithms">
+            <div class="project-header">
+              <div class="project-title-area">
+                <div class="project-badge-row">
+                  <span class="badge badge-featured">Featured Project</span>
+                  <span class="badge badge-gold">TCS CodeVita Benchmark</span>
+                </div>
+                <h3 class="project-title">Competitive Programming &amp; Algorithmic Repository</h3>
+                <p class="project-subtitle">High-Efficiency Solutions for TCS CodeVita &amp; Advanced Challenges</p>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AhsanASid/algorithmic-problem-solving" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="View Competitive Programming repository on GitHub">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-narrative">
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-cyan-400">Problem Statement</h4>
+                  <p>Solving complex computational challenges requiring strict algorithmic optimization within sub-second execution windows and limited memory limits under competitive contest settings.</p>
+                </div>
+                <div class="narrative-block">
+                  <h4 class="block-label mono text-amber-300">Solution &amp; Core Domains</h4>
+                  <p>Curated repository of optimized algorithmic solutions developed during <strong>TCS CodeVita</strong> and competitive training. Contains modular implementations of <strong>Graph Theory</strong> (Dijkstra, Tarjan SCC), <strong>Dynamic Programming</strong> (Multi-dimensional, Bitmask DP), <strong>Segment Trees</strong> with Lazy Propagation, <strong>Trie</strong>, and custom stress-test harnesses.</p>
+                </div>
+              </div>
+
+              <!-- Mini Algorithmic Architecture Flow -->
+              <div class="project-arch-flow" aria-label="Architecture Diagram: Input Problem, Algorithmic Engine, Big-O Optimization, Verified Output">
+                <div class="arch-flow-header mono">Algorithmic Pipeline &bull; Complexity Optimization</div>
+                <div class="arch-nodes-wrap">
+                  <div class="arch-node">
+                    <span class="arch-node-icon">🧩</span>
+                    <span class="arch-node-text">Problem Constraints</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight">
+                    <span class="arch-node-icon">⚙️</span>
+                    <span class="arch-node-text">Optimal DSA Choice</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node arch-highlight-emerald">
+                    <span class="arch-node-icon">⚡</span>
+                    <span class="arch-node-text">Fast I/O &amp; Bitwise</span>
+                  </div>
+                  <div class="arch-arrow">→</div>
+                  <div class="arch-node">
+                    <span class="arch-node-icon">🏆</span>
+                    <span class="arch-node-text">Pass All Test Suites</span>
+                  </div>
+                </div>
+                <div class="arch-iac-bar mono">
+                  <span class="iac-tag">O(V + E) Graphs</span>
+                  <span class="iac-tag">Segment Trees</span>
+                  <span class="iac-tag">Stress-Test Generators</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-highlights">
+              <ul class="highlight-list">
+                <li><span class="hl-check">✔</span> Fast I/O templates in C++ and optimized generator patterns in Python.</li>
+                <li><span class="hl-check">✔</span> Comprehensive edge case suites and automated stress-test generators for correctness.</li>
+                <li><span class="hl-check">✔</span> Strict adherence to optimal O(V+E) graph algorithms and O(N log N) transformations.</li>
+                <li><span class="hl-check">✔</span> Documented asymptotic complexity analyses and invariant proofs.</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-metrics">
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-amber-300">300+</span>
+                  <span class="p-metric-lbl">Problems Solved</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-cyan-400">Ranked</span>
+                  <span class="p-metric-lbl">TCS CodeVita Qualifier</span>
+                </div>
+                <div class="proj-metric">
+                  <span class="p-metric-val mono text-emerald-400">Top 5%</span>
+                  <span class="p-metric-lbl">Runtime Efficiency</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Dynamic Programming</span>
+                <span class="tech-tag">Graph Theory</span>
+                <span class="tech-tag">Combinatorics</span>
+                <span class="tech-tag">Segment Trees</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- ACHIEVEMENTS & COMPETITIONS SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section achievements-section" id="achievements" aria-labelledby="achievements-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">04.</span> HONORS &amp; IMPACT</span>
+          <h2 class="section-title" id="achievements-heading">Notable Achievements &amp; Certifications</h2>
+          <p class="section-subtitle">Demonstrated prowess in competitive programming, cloud architecture automation, and analytical optimizations.</p>
+        </div>
+
+        <!-- Spotlight: TCS CodeVita Qualifier Card -->
+        <div class="spotlight-card glass-panel reveal" data-reveal="fade-up" id="spotlight-codevita">
+          <div class="spotlight-inner">
+            <div class="spotlight-badge-col">
+              <div class="trophy-hex-wrapper" aria-hidden="true">
+                <div class="trophy-hex">
+                  <svg aria-hidden="true" class="trophy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <span class="spotlight-year mono">Season 2024</span>
+              <span class="spotlight-tag-pill">Competitive Programming</span>
+            </div>
+
+            <div class="spotlight-content-col">
+              <div class="spotlight-header">
+                <h3 class="spotlight-title text-gradient-hero">TCS CodeVita Contestant &amp; Ranked Qualifier</h3>
+                <span class="spotlight-issuer mono">Tata Consultancy Services &bull; Global Contest</span>
+              </div>
+              <p class="spotlight-summary">
+                Qualified in Tata Consultancy Services' flagship global competitive programming challenge (recognized by Guinness World Records), demonstrating high-speed algorithmic thinking, optimal memory-time complexities, and rigorous test case pass rates across graph theory, dynamic programming, and numerical computation.
+              </p>
+              
+              <div class="spotlight-bullets">
+                <div class="bullet-item">
+                  <span class="bullet-icon">⚡</span>
+                  <span>Authored sub-second algorithmic solutions for complex combinatorial and graph-based problems under tight competition timers.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">📐</span>
+                  <span>Demonstrated mastery over optimal Big-O time and space complexity constraints, preventing runtime and memory limit exceptions.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">🌐</span>
+                  <span>Competed against tens of thousands of top software engineering participants globally.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Achievement Cards Grid -->
+        <div class="achievements-subgrid">
+          
+          <!-- Achievement 2: Terraform Multi-Cloud -->
+          <div class="achievement-card glass-panel reveal" data-reveal="fade-up" data-delay="100">
+            <div class="achieve-card-header">
+              <div class="achieve-icon text-cyan-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="achieve-meta">
+                <span class="achieve-badge-pill">Infrastructure as Code</span>
+                <span class="achieve-date mono">2024</span>
+              </div>
+            </div>
+            <h4 class="achieve-title">Multi-Cloud Infrastructure Automation with Terraform</h4>
+            <p class="achieve-summary">
+              Designed modular, reusable Terraform modules enabling deterministic zero-touch deployment of cloud environments across GCP (Cloud Run, Pub/Sub, BigQuery) and AWS (S3, IAM, VPC), enforcing least-privilege security and automated drift detection.
+            </p>
+            <ul class="achieve-impact-list">
+              <li>100% reproducible environment provisioning reducing setup overhead from hours to minutes.</li>
+              <li>Integrated state-locking with remote backends and CI/CD validation pipelines.</li>
+            </ul>
+          </div>
+
+          <!-- Achievement 3: BigQuery Query Optimization -->
+          <div class="achievement-card glass-panel reveal" data-reveal="fade-up" data-delay="200">
+            <div class="achieve-card-header">
+              <div class="achieve-icon text-emerald-400" aria-hidden="true">
+                <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <div class="achieve-meta">
+                <span class="achieve-badge-pill">Performance Engineering</span>
+                <span class="achieve-date mono">2024</span>
+              </div>
+            </div>
+            <h4 class="achieve-title">Analytical Pipeline &amp; Query Cost Optimization</h4>
+            <p class="achieve-summary">
+              Engineered partitioning, clustering, and materialized aggregations in BigQuery and PostgreSQL, achieving over 40% reduction in query processing compute overhead while boosting analytical query speeds by 3.5x.
+            </p>
+            <ul class="achieve-impact-list">
+              <li>Drastically optimized analytical query execution and reduced cloud billing consumption.</li>
+              <li>Implemented schema evolution and idempotency standards across pipeline jobs.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Verified Certifications Row -->
+        <div class="certifications-section mt-12 reveal" data-reveal="fade-up">
+          <h3 class="cert-heading mono">Verified Certifications &amp; Accreditations</h3>
+          <div class="cert-grid">
+            
+            <div class="cert-card glass-panel">
+              <div class="cert-icon text-amber-400">📜</div>
+              <div class="cert-body">
+                <h4 class="cert-title">TCS CodeVita Ranked Qualifier</h4>
+                <span class="cert-issuer">Tata Consultancy Services &bull; 2024</span>
+                <span class="cert-tag mono">Competitive Programming</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon text-cyan-400">☁️</div>
+              <div class="cert-body">
+                <h4 class="cert-title">Cloud Architecture &amp; Data Engineering Specialization</h4>
+                <span class="cert-issuer">GCP / AWS Practices &bull; 2024</span>
+                <span class="cert-tag mono">Cloud &amp; Big Data</span>
+              </div>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon text-emerald-400">⚙️</div>
+              <div class="cert-body">
+                <h4 class="cert-title">HashiCorp Terraform Associate</h4>
+                <span class="cert-issuer">Cloud IaC Curriculum &amp; Practice &bull; 2024</span>
+                <span class="cert-tag mono">Infrastructure as Code</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- EXPERIENCE & EDUCATION TIMELINE SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">05.</span> JOURNEY</span>
+          <h2 class="section-title" id="experience-heading">Career Trajectory &amp; Academic Foundation</h2>
+          <p class="section-subtitle">Chronological record of engineering roles, software projects, and core computer science education.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          
+          <!-- Experience Item -->
+          <div class="timeline-item reveal" data-reveal="fade-up">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title-wrap">
+                  <span class="timeline-tag">Experience</span>
+                  <h3 class="timeline-role">Software &amp; Data Engineer</h3>
+                  <h4 class="timeline-org">Engineering &amp; Technology Projects</h4>
+                </div>
+                <div class="timeline-meta mono">
+                  <span class="timeline-period">2023 &mdash; Present</span>
+                  <span class="timeline-loc">India</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <ul class="timeline-bullets">
+                  <li>Architected serverless and containerized data pipelines ingesting multi-source datasets into cloud analytical stores (<strong>BigQuery</strong>, <strong>PostgreSQL</strong>).</li>
+                  <li>Automated cloud infrastructure deployment on <strong>GCP</strong> and <strong>AWS</strong> using modular <strong>Terraform</strong> scripts, slashing deployment setup friction by 90%.</li>
+                  <li>Built asynchronous high-throughput REST APIs with <strong>FastAPI</strong>, incorporating <strong>Redis</strong> cache-aside patterns and connection pooling for &lt;15ms latency.</li>
+                  <li>Created CI/CD workflows using <strong>GitHub Actions</strong> for automated linting, test suites, container building, and deployment validation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item -->
+          <div class="timeline-item reveal" data-reveal="fade-up" data-delay="150">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot marker-dot-edu"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title-wrap">
+                  <span class="timeline-tag timeline-tag-edu">Education</span>
+                  <h3 class="timeline-role">Bachelor of Technology in Computer Science &amp; Engineering</h3>
+                  <h4 class="timeline-org">University / Institute of Technology</h4>
+                </div>
+                <div class="timeline-meta mono">
+                  <span class="timeline-period">2020 &mdash; 2024</span>
+                  <span class="timeline-loc">Degree Completed</span>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <p class="timeline-desc">Specialized in Distributed Systems, Data Structures &amp; Algorithms, Cloud Computing, Operating Systems, Database Management Systems (DBMS), and Computer Networks.</p>
+                <div class="coursework-chips">
+                  <span class="course-chip">Data Structures &amp; Algorithms</span>
+                  <span class="course-chip">Distributed Systems</span>
+                  <span class="course-chip">Cloud Computing</span>
+                  <span class="course-chip">Database Management Systems</span>
+                  <span class="course-chip">Operating Systems</span>
+                  <span class="course-chip">Computer Networks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- CONTACT SECTION -->
+    <!-- ======================================================================= -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header reveal" data-reveal="fade-up">
+          <span class="section-tag mono"><span class="accent-terminal">06.</span> INQUIRIES &amp; HIRING</span>
+          <h2 class="section-title" id="contact-heading">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">I am actively seeking Software &amp; Data Engineering opportunities. Feel free to reach out for high-impact roles, collaborations, or technical discussions.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels Card -->
+          <div class="contact-card glass-panel reveal" data-reveal="slide-right">
+            <div class="contact-card-header">
+              <div class="contact-status-indicator">
+                <span class="status-dot pulse" aria-hidden="true"></span>
+                <span class="font-semibold text-emerald-400">Available Immediately</span>
+              </div>
+              <h3 class="contact-card-title">Get in Touch Directly</h3>
+              <p class="contact-card-desc">Whether you have an open role, an architectural question, or an exciting project, my inbox is open.</p>
+            </div>
+
+            <!-- Email Copy Box -->
+            <div class="email-copy-box">
+              <div class="email-label mono">Official Developer Email</div>
+              <div class="email-row">
+                <code class="email-text mono" id="contact-email">ahsanasiddiqui.dev@gmail.com</code>
+                <button type="button" class="btn btn-sm btn-secondary copy-email-btn" id="copy-email-btn" data-email="ahsanasiddiqui.dev@gmail.com" aria-label="Copy email address to clipboard">
+                  <svg aria-hidden="true" class="icon-sm copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="btn-copy-label">Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Direct Channel Links -->
+            <div class="channel-links">
+              <a href="mailto:ahsanasiddiqui.dev@gmail.com" class="channel-item">
+                <div class="channel-icon text-cyan-400">
+                  <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-title">Direct Email</span>
+                  <span class="channel-subtitle">ahsanasiddiqui.dev@gmail.com</span>
+                </div>
+                <span class="channel-arrow">→</span>
+              </a>
+
+              <a href="https://linkedin.com/in/ahsanasid" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon text-blue-400">
+                  <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-title">LinkedIn Connection</span>
+                  <span class="channel-subtitle">linkedin.com/in/ahsanasid</span>
+                </div>
+                <span class="channel-arrow">→</span>
+              </a>
+
+              <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon text-slate-200">
+                  <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-title">GitHub Portfolio</span>
+                  <span class="channel-subtitle">github.com/AhsanASid</span>
+                </div>
+                <span class="channel-arrow">→</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Quick Message / Opportunity Card -->
+          <div class="opportunity-card glass-panel reveal" data-reveal="slide-left">
+            <div class="opp-header">
+              <span class="opp-badge mono">Role Preferences</span>
+              <h3 class="opp-title">Ideal Opportunities</h3>
+            </div>
+            
+            <div class="opp-list">
+              <div class="opp-item">
+                <span class="opp-bullet">✔</span>
+                <div>
+                  <h4 class="opp-role-name">Software Engineer &bull; Backend / Distributed Systems</h4>
+                  <p class="opp-role-desc">High-throughput microservices, API architecture, Python/FastAPI, concurrency, relational and caching data stores.</p>
+                </div>
+              </div>
+
+              <div class="opp-item">
+                <span class="opp-bullet">✔</span>
+                <div>
+                  <h4 class="opp-role-name">Data Engineer &bull; Cloud Warehousing &amp; ETL</h4>
+                  <p class="opp-role-desc">Event-driven pipelines, GCP BigQuery, AWS S3, Apache Airflow, PySpark transformations, dimensional modeling.</p>
+                </div>
+              </div>
+
+              <div class="opp-item">
+                <span class="opp-bullet">✔</span>
+                <div>
+                  <h4 class="opp-role-name">Cloud &amp; DevOps Engineer &bull; Infrastructure as Code</h4>
+                  <p class="opp-role-desc">Terraform automation, multi-cloud topologies, Docker container orchestration, and automated CI/CD pipelines.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="opp-footer">
+              <div class="opp-meta-item">
+                <span class="opp-meta-lbl">Relocation:</span>
+                <span class="opp-meta-val">Open to Remote &amp; Global Relocation</span>
+              </div>
+              <div class="opp-meta-item">
+                <span class="opp-meta-lbl">Response Time:</span>
+                <span class="opp-meta-val">Within 24 Hours</span>
+              </div>
+            </div>
+
+            <div class="opp-cta">
+              <a href="mailto:ahsanasiddiqui.dev@gmail.com?subject=Software%20/%20Data%20Engineering%20Opportunity" class="btn btn-primary btn-block">
+                <span>Initiate Direct Conversation</span>
+                <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand-logo" aria-label="Back to top">
+            <span class="logo-mark">
+              <svg aria-hidden="true" class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="url(#footer-logo-grad)" />
+                <path d="M12 28L20 10L28 28M15 21H25" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#06b6d4" />
+                    <stop offset="1" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <div class="brand-text">
+              <span class="brand-name">Ahsan Ahmad Siddiqui</span>
+              <span class="brand-role">Software &amp; Data Engineer</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Architecting robust data pipelines, scalable cloud infrastructure, and high-performance software solutions.</p>
+        </div>
+
+        <div class="footer-nav">
+          <span class="footer-heading mono">Quick Navigation</span>
+          <ul class="footer-links">
+            <li><a href="#about">About &amp; Philosophy</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#achievements">Achievements &amp; CodeVita</a></li>
+            <li><a href="#experience">Career Timeline</a></li>
+            <li><a href="#contact">Contact Information</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <span class="footer-heading mono">Connect &amp; Follow</span>
+          <div class="footer-social-icons">
+            <a href="https://github.com/AhsanASid" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="GitHub Profile">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ahsanasid" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="LinkedIn Profile">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:ahsanasiddiqui.dev@gmail.com" class="footer-icon-btn" aria-label="Send Email">
+              <svg aria-hidden="true" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+          <div class="footer-status mono">
+            <span class="status-dot pulse" aria-hidden="true"></span>
+            <span>Available for Full-Time Roles</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>&copy; 2026 Ahsan Ahmad Siddiqui. Engineered with speed and precision.</p>
+          <p class="footer-subcopy">Built with semantic HTML5, modern CSS3 variables &amp; glassmorphism. <a href="https://github.com/AhsanASid/Portfolio-Website" target="_blank" rel="noopener noreferrer" class="footer-repo-link">View Source on GitHub</a></p>
+        </div>
+        <div class="footer-back-to-top">
+          <a href="#top" class="back-to-top-link" aria-label="Scroll back to top">
+            <span>Back to top</span>
+            <svg aria-hidden="true" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Action Button -->
+  <button type="button" class="back-to-top-floating" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Core Portfolio Animation Engine -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

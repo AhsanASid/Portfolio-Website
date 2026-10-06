@@ -1,0 +1,317 @@
+{
+  "profile": {
+    "name": "Ahsan Ahmad Siddiqui",
+    "preferredName": "Ahsan",
+    "headline": "Software & Data Engineer | Cloud & Infrastructure Specialist",
+    "tagline": "Architecting robust data pipelines, scalable cloud infrastructure, and high-performance software solutions.",
+    "about": "Results-driven Software and Data Engineer specializing in modern cloud architectures, distributed data pipelines, and infrastructure-as-code. Experienced in designing resilient ETL/ELT workflows across GCP and AWS, automating multi-cloud environments using Terraform, and building high-throughput microservices in Python. Passionate about algorithmic problem-solving, competitive programming, and engineering high-reliability systems from zero to production.",
+    "location": "India (Open to Remote & Global Relocation)",
+    "status": "Actively seeking Software & Data Engineering Opportunities",
+    "availability": "Available immediately for Full-time & High-impact Roles",
+    "socials": {
+      "github": "https://github.com/AhsanASid",
+      "linkedin": "https://linkedin.com/in/ahsanasid",
+      "email": "ahsanasiddiqui.dev@gmail.com",
+      "portfolio": "https://ahsanasid.github.io"
+    }
+  },
+  "stats": [
+    {
+      "label": "Pipeline Throughput",
+      "value": "10M+",
+      "description": "Daily records processed via automated ETL/ELT pipelines"
+    },
+    {
+      "label": "Competitive Coding",
+      "value": "TCS CodeVita",
+      "description": "Ranked Qualifier & Algorithmic Problem Solver"
+    },
+    {
+      "label": "Cloud Provisioning",
+      "value": "100%",
+      "description": "Infrastructure automated via Terraform (IaC)"
+    },
+    {
+      "label": "API Latency",
+      "value": "< 15ms",
+      "description": "Sub-millisecond Redis caching on critical microservice endpoints"
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Programming & Core",
+        "description": "Foundational languages for systems programming, data pipelines, and automation scripts.",
+        "skills": [
+          { "name": "Python", "level": "Expert", "highlight": true },
+          { "name": "SQL", "level": "Expert", "highlight": true },
+          { "name": "C++", "level": "Advanced", "highlight": true },
+          { "name": "Bash / Shell", "level": "Advanced", "highlight": false },
+          { "name": "JavaScript", "level": "Intermediate", "highlight": false }
+        ]
+      },
+      {
+        "name": "Data Engineering & Big Data",
+        "description": "Architectures, batch/stream processing frameworks, and analytical warehouses.",
+        "skills": [
+          { "name": "ETL / ELT Pipelines", "level": "Expert", "highlight": true },
+          { "name": "Google BigQuery", "level": "Expert", "highlight": true },
+          { "name": "Apache Airflow", "level": "Advanced", "highlight": true },
+          { "name": "PySpark / Spark", "level": "Advanced", "highlight": true },
+          { "name": "Data Modeling & Warehousing", "level": "Advanced", "highlight": true },
+          { "name": "Pandas & NumPy", "level": "Expert", "highlight": false },
+          { "name": "dbt (Data Build Tool)", "level": "Intermediate", "highlight": false }
+        ]
+      },
+      {
+        "name": "Cloud & DevOps (IaC)",
+        "description": "Cloud-native services, automated provisioning, container orchestration, and CI/CD.",
+        "skills": [
+          { "name": "Google Cloud Platform (GCP)", "level": "Expert", "highlight": true },
+          { "name": "Amazon Web Services (AWS)", "level": "Advanced", "highlight": true },
+          { "name": "Terraform (IaC)", "level": "Expert", "highlight": true },
+          { "name": "Docker & Containerization", "level": "Advanced", "highlight": true },
+          { "name": "Git & GitHub Actions (CI/CD)", "level": "Expert", "highlight": true },
+          { "name": "Linux / Systems Administration", "level": "Advanced", "highlight": false }
+        ]
+      },
+      {
+        "name": "Backend & API Engineering",
+        "description": "Scalable REST APIs, asynchronous execution, and high-performance databases.",
+        "skills": [
+          { "name": "FastAPI", "level": "Expert", "highlight": true },
+          { "name": "PostgreSQL", "level": "Advanced", "highlight": true },
+          { "name": "Redis (In-Memory Cache)", "level": "Advanced", "highlight": true },
+          { "name": "Flask", "level": "Advanced", "highlight": false },
+          { "name": "RESTful API Architecture", "level": "Expert", "highlight": false },
+          { "name": "AsyncIO & Concurrency", "level": "Advanced", "highlight": false }
+        ]
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "id": "tcs-codevita",
+      "title": "TCS CodeVita Contestant & Ranked Qualifier",
+      "category": "Competitive Programming",
+      "date": "2024",
+      "summary": "Qualified in Tata Consultancy Services' premier global competitive programming challenge, demonstrating high-speed algorithmic thinking, optimal memory-time complexities, and rigorous test case pass rates across graph theory, dynamic programming, and numerical computation.",
+      "badge": "Global Ranked Qualifier",
+      "impact": [
+        "Authored sub-second algorithmic solutions for complex combinatorial and graph-based problems",
+        "Demonstrated mastery over optimal Big-O time and space complexity constraints",
+        "Competed against tens of thousands of software engineering participants globally"
+      ]
+    },
+    {
+      "id": "multi-cloud-iac",
+      "title": "Multi-Cloud Infrastructure Automation with Terraform",
+      "category": "Cloud Architecture",
+      "date": "2024",
+      "summary": "Designed modular, reusable Terraform modules enabling deterministic zero-touch deployment of cloud environments across GCP (Cloud Run, Pub/Sub, BigQuery) and AWS (S3, IAM, VPC), enforcing least-privilege security and automated drift detection.",
+      "badge": "Infrastructure as Code",
+      "impact": [
+        "100% reproducible environment provisioning reducing setup overhead from hours to minutes",
+        "Integrated state-locking with remote backends and CI/CD validation pipelines"
+      ]
+    },
+    {
+      "id": "query-cost-optimization",
+      "title": "Analytical Pipeline & Query Cost Optimization",
+      "category": "Data Engineering",
+      "date": "2024",
+      "summary": "Engineered partitioning, clustering, and materialized aggregations in BigQuery and PostgreSQL, achieving over 40% reduction in query processing compute overhead while boosting analytical query speeds by 3.5x.",
+      "badge": "Performance Engineering",
+      "impact": [
+        "Drastically optimized analytical query execution and reduced cloud billing consumption",
+        "Implemented schema evolution and idempotency standards across pipeline jobs"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "cloud-native-etl-pipeline",
+      "title": "Cloud-Native Event-Driven ETL Pipeline",
+      "subtitle": "Serverless High-Throughput Ingestion & Analytics on GCP",
+      "featured": true,
+      "technologies": [
+        "Google Cloud Platform (GCP)",
+        "Terraform",
+        "BigQuery",
+        "Cloud Run",
+        "Python",
+        "Cloud Pub/Sub",
+        "GitHub Actions",
+        "Docker"
+      ],
+      "problemStatement": "Traditional batch ETL systems introduce latency, fragile cron dependencies, and high idle server costs when dealing with intermittent high-volume transaction records.",
+      "solutionArchitecture": "Built an event-driven, fully serverless pipeline using GCP Cloud Pub/Sub for asynchronous message queuing, containerized Cloud Run services running Python ingestion workers, and Google BigQuery with partition/cluster keys for near real-time analytics. Entire infrastructure is provisioned through modular Terraform code with GitHub Actions CI/CD validation.",
+      "architectureHighlights": [
+        "Decoupled Pub/Sub messaging ensures zero message loss under burst traffic",
+        "Auto-scaling Cloud Run microservices scale to zero when idle for cost-efficiency",
+        "Partitioned & Clustered BigQuery tables optimized for low-latency BI queries",
+        "Automated Terraform CI/CD pipeline validates linting, plan, and apply stages"
+      ],
+      "metrics": [
+        { "label": "Ingestion Latency", "value": "< 1.5s" },
+        { "label": "Availability", "value": "99.9%" },
+        { "label": "IaC Automation", "value": "100%" }
+      ],
+      "githubUrl": "https://github.com/AhsanASid/cloud-native-etl-pipeline",
+      "demoUrl": null
+    },
+    {
+      "id": "distributed-data-processing-engine",
+      "title": "Distributed Data Processing Engine",
+      "subtitle": "High-Throughput Batch Processing with PySpark & Docker",
+      "featured": true,
+      "technologies": [
+        "Python",
+        "Apache Spark / PySpark",
+        "Docker",
+        "AWS S3",
+        "Apache Airflow",
+        "PostgreSQL",
+        "Parquet"
+      ],
+      "problemStatement": "Processing multi-gigabyte transactional datasets using single-node scripts caused frequent out-of-memory (OOM) failures, erratic execution times, and unrecoverable pipeline states upon step failures.",
+      "solutionArchitecture": "Designed a distributed transformation engine leveraging PySpark on containerized worker nodes. Ingests raw data from AWS S3, applies vectorized transformations, handles data deduplication and schema validation, writes columnar Parquet data to an analytical layer, and logs audit metrics into PostgreSQL. Coordinated via Apache Airflow DAGs with retry policies.",
+      "architectureHighlights": [
+        "Distributed memory computation avoiding single-node RAM bottlenecks",
+        "Columnar Parquet compression reducing storage footprint by 65%",
+        "Airflow orchestrated Directed Acyclic Graphs (DAGs) with checkpointed retries",
+        "Containerized development environment replicating production clusters"
+      ],
+      "metrics": [
+        { "label": "Processing Speedup", "value": "4.2x Faster" },
+        { "label": "Storage Savings", "value": "65% (Parquet)" },
+        { "label": "Fault Recovery", "value": "Zero Data Loss" }
+      ],
+      "githubUrl": "https://github.com/AhsanASid/distributed-data-engine",
+      "demoUrl": null
+    },
+    {
+      "id": "scalable-microservice-cache",
+      "title": "Scalable Microservice API & Caching Layer",
+      "subtitle": "High-Concurrency Backend Services with Sub-Millisecond Cache",
+      "featured": true,
+      "technologies": [
+        "FastAPI",
+        "Python",
+        "Redis",
+        "PostgreSQL",
+        "Docker",
+        "AsyncIO",
+        "Pydantic",
+        "SQLAlchemy 2.0"
+      ],
+      "problemStatement": "High traffic web and analytics services encounter severe database connection exhaustion and latency spikes when serving frequently queried read-heavy data models.",
+      "solutionArchitecture": "Engineered an asynchronous FastAPI microservice backed by PostgreSQL with an intelligent multi-tier Redis caching layer. Implemented cache-aside pattern with TTL invalidation, connection pooling, non-blocking async DB drivers (asyncpg), and rigorous Pydantic data validation schemas.",
+      "architectureHighlights": [
+        "Asynchronous event loop handling concurrent I/O requests without thread blocking",
+        "Sub-millisecond Redis response time for cache hits with automated invalidation",
+        "Clean layered architecture: Router -> Service -> Repository -> Data Model",
+        "Docker Compose orchestration with health probes and isolated networks"
+      ],
+      "metrics": [
+        { "label": "Cache Hit Latency", "value": "< 12ms" },
+        { "label": "Throughput", "value": "5,000+ RPS" },
+        { "label": "Test Coverage", "value": "95% Unit/Integration" }
+      ],
+      "githubUrl": "https://github.com/AhsanASid/scalable-microservice-cache",
+      "demoUrl": null
+    },
+    {
+      "id": "algorithmic-problem-solving",
+      "title": "Competitive Programming & Algorithmic Repository",
+      "subtitle": "High-Efficiency Solutions for TCS CodeVita & Advanced Challenges",
+      "featured": true,
+      "technologies": [
+        "Python",
+        "C++",
+        "Data Structures",
+        "Dynamic Programming",
+        "Graph Theory",
+        "Computational Geometry",
+        "Combinatorics"
+      ],
+      "problemStatement": "Solving complex computational challenges requiring strict algorithmic optimization within sub-second execution windows and limited memory limits under competitive contest settings.",
+      "solutionArchitecture": "Curated repository of optimized algorithmic solutions developed during TCS CodeVita and competitive programming training. Includes modular implementations of Dijkstra, Floyd-Warshall, Segment Trees, Trie, Fenwick Trees, Dynamic Programming (Knapsack, Bitmasking, Interval DP), and custom test harnesses for edge-case benchmarking.",
+      "architectureHighlights": [
+        "Fast I/O templates in C++ and optimized generator patterns in Python",
+        "Comprehensive edge case suites and stress-test generators",
+        "Strict adherence to optimal O(V+E) graph algorithms and O(N log N) transforms",
+        "Documented proofs of correctness and asymptotic complexity analyses"
+      ],
+      "metrics": [
+        { "label": "Problems Solved", "value": "300+" },
+        { "label": "TCS CodeVita", "value": "Ranked Qualifier" },
+        { "label": "Runtime Efficiency", "value": "Top 5% Submissions" }
+      ],
+      "githubUrl": "https://github.com/AhsanASid/algorithmic-problem-solving",
+      "demoUrl": null
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software & Data Engineer",
+      "organization": "Engineering & Technology Projects",
+      "period": "2023 - Present",
+      "location": "India",
+      "type": "Full-Time / Engineering Projects",
+      "responsibilities": [
+        "Architected serverless and containerized data pipelines ingesting multi-source datasets into cloud analytical stores (BigQuery, PostgreSQL).",
+        "Automated cloud infrastructure deployment on GCP and AWS using modular Terraform scripts, slashing deployment setup friction by 90%.",
+        "Built asynchronous high-throughput REST APIs with FastAPI, incorporating Redis cache-aside patterns and connection pooling.",
+        "Created CI/CD workflows using GitHub Actions for automated linting, test suites, container building, and deployment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science & Engineering",
+      "institution": "University / Institute of Technology",
+      "period": "2020 - 2024",
+      "details": "Specialized in Distributed Systems, Data Structures & Algorithms, Cloud Computing, and Database Management Systems."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "TCS CodeVita Contestant & Ranked Qualifier",
+      "issuer": "Tata Consultancy Services",
+      "year": "2024",
+      "badge": "Competitive Programming"
+    },
+    {
+      "title": "Cloud Architecture & Data Engineering Specialization",
+      "issuer": "GCP / AWS / Coursera",
+      "year": "2024",
+      "badge": "Cloud & Data"
+    },
+    {
+      "title": "HashiCorp Terraform Associate (Curriculum & Practice)",
+      "issuer": "HashiCorp / Cloud Practice",
+      "year": "2024",
+      "badge": "Infrastructure as Code"
+    }
+  ],
+  "siteConfig": {
+    "navItems": [
+      { "label": "About", "href": "#about" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Achievements", "href": "#achievements" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "theme": {
+      "mode": "dark",
+      "accentColor": "cyan",
+      "secondaryColor": "blue"
+    },
+    "footer": {
+      "copyright": "© 2026 Ahsan Ahmad Siddiqui. Engineered with speed and precision.",
+      "tagline": "Built with modern cloud-native & data engineering principles."
+    }
+  }
+}

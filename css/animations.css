@@ -1,0 +1,377 @@
+/* ==========================================================================
+   AHSAN AHMAD SIDDIQUI — ANIMATIONS & MICRO-INTERACTIONS
+   Performance-optimized CSS: GPU-accelerated transforms, zero layout shifts,
+   WCAG AA compliant, prefers-reduced-motion safe.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. SCROLL REVEAL (Progressive Enhancement with html.js-ready)
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 1; /* Fallback for no-js environments */
+  transform: none;
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+html.js-ready .reveal[data-reveal="fade-up"] {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+html.js-ready .reveal[data-reveal="fade-down"] {
+  opacity: 0;
+  transform: translateY(-24px);
+}
+
+html.js-ready .reveal[data-reveal="slide-right"] {
+  opacity: 0;
+  transform: translateX(-36px);
+}
+
+html.js-ready .reveal[data-reveal="slide-left"] {
+  opacity: 0;
+  transform: translateX(36px);
+}
+
+html.js-ready .reveal[data-reveal="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+html.js-ready .reveal[data-reveal="fade"] {
+  opacity: 0;
+  transform: none;
+}
+
+html.js-ready .reveal.is-revealed {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* --------------------------------------------------------------------------
+   2. STICKY HEADER ELEVATION & ACTIVE NAV LINK INDICATOR
+   -------------------------------------------------------------------------- */
+.site-header {
+  transition: background 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  background: rgba(11, 15, 23, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom-color: rgba(6, 182, 212, 0.22);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 
+              0 0 16px rgba(6, 182, 212, 0.08);
+}
+
+/* Nav Link Hover & Active Glow */
+.nav-link {
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-emerald));
+  border-radius: 2px;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+}
+
+.nav-link.active {
+  color: var(--text-white);
+}
+
+.nav-link.active .nav-num {
+  color: var(--accent-cyan-light);
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+.mobile-nav-link {
+  position: relative;
+  transition: color var(--transition-fast), 
+              padding-left var(--transition-fast), 
+              border-color var(--transition-fast);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--accent-cyan-light);
+  padding-left: 0.5rem;
+  border-bottom-color: var(--accent-cyan);
+}
+
+.mobile-nav-link.active .nav-num {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   3. PROJECT CARDS SPOTLIGHT & 3D TILT MICRO-INTERACTION
+   -------------------------------------------------------------------------- */
+.project-card {
+  position: relative;
+  transition: transform 0.28s cubic-bezier(0.2, 0, 0, 1), 
+              box-shadow 0.28s ease, 
+              border-color 0.28s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Mouse tracking radial spotlight shine overlay */
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    650px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(6, 182, 212, 0.12),
+    transparent 42%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* Interactive Card Internal Elevation */
+.project-card:hover {
+  border-color: rgba(6, 182, 212, 0.35);
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.8), 
+              0 0 30px rgba(6, 182, 212, 0.14);
+}
+
+/* Skill chip & badge interactive hover bump */
+.skill-chip {
+  transition: transform var(--transition-fast), 
+              border-color var(--transition-fast), 
+              background-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(6, 182, 212, 0.4);
+  background-color: rgba(6, 182, 212, 0.08);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15);
+}
+
+.tech-tag {
+  transition: transform var(--transition-fast), 
+              color var(--transition-fast), 
+              border-color var(--transition-fast);
+}
+
+.tech-tag:hover {
+  transform: translateY(-1px);
+  color: var(--accent-cyan-light);
+  border-color: rgba(6, 182, 212, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   4. METRIC CARDS HOVER ELEVATION
+   -------------------------------------------------------------------------- */
+.metric-card {
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), 
+              box-shadow 0.25s ease, 
+              border-color 0.25s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(6, 182, 212, 0.35);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 
+              0 0 20px rgba(6, 182, 212, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   5. 1-CLICK EMAIL COPY TOOLTIP & VISUAL FEEDBACK
+   -------------------------------------------------------------------------- */
+.copy-email-btn {
+  position: relative;
+  transition: background-color var(--transition-fast), 
+              border-color var(--transition-fast), 
+              color var(--transition-fast), 
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.copy-email-btn:hover {
+  transform: translateY(-1px);
+}
+
+.copy-email-btn:active {
+  transform: translateY(0);
+}
+
+.copy-email-btn.btn-copied {
+  background: var(--accent-emerald) !important;
+  color: #0b0f17 !important;
+  border-color: var(--accent-emerald) !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+}
+
+/* Floating Confirmation Tooltip */
+.copy-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px) scale(0.92);
+  background: #0f172a;
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.75), 
+              0 0 14px rgba(16, 185, 129, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.copy-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #0f172a transparent transparent transparent;
+}
+
+.copy-tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
+/* --------------------------------------------------------------------------
+   6. FLOATING BACK-TO-TOP BUTTON
+   -------------------------------------------------------------------------- */
+.back-to-top-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-light);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background 0.2s ease, 
+              border-color 0.2s ease, 
+              color 0.2s ease, 
+              box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.55);
+}
+
+.back-to-top-floating:hover {
+  background: var(--bg-slate-card);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan-light);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(6, 182, 212, 0.35);
+}
+
+.back-to-top-floating:active {
+  transform: translateY(0);
+}
+
+.back-to-top-floating.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   7. HERO TYPEWRITER & CURSOR
+   -------------------------------------------------------------------------- */
+.cursor-blink {
+  display: inline-block;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  animation: cursorBlink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   8. ACCESSIBILITY: PREFERS-REDUCED-MOTION OVERRIDES
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .project-card {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .project-card::after {
+    display: none !important;
+  }
+
+  .back-to-top-floating {
+    transition: none !important;
+  }
+
+  .cursor-blink {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
