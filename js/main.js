@@ -442,9 +442,11 @@
           targetPosition = rect.top + window.pageYOffset - headerHeight;
         }
 
-        window.scrollTo({
-          top: Math.max(0, targetPosition),
-          behavior: prefersReducedMotion ? 'auto' : 'smooth',
+        requestAnimationFrame(function () {
+          window.scrollTo({
+            top: Math.max(0, targetPosition),
+            behavior: prefersReducedMotion ? 'auto' : 'smooth',
+          });
         });
 
         // Update URL hash cleanly without jumping
@@ -534,7 +536,7 @@
 
     copyBtn.addEventListener('click', function () {
       const email =
-        copyBtn.getAttribute('data-email') || 'ahsanasiddiqui.dev@gmail.com';
+        copyBtn.getAttribute('data-email') || 'ahsansid001@gmail.com';
 
       function onSuccess() {
         // Change button visual state

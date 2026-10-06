@@ -1369,6 +1369,9 @@ code, pre, .mono {
   justify-content: space-between;
   gap: 0.4rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(6, 182, 212, 0.3) transparent;
   padding: 0.5rem 0;
 }
 
@@ -1760,14 +1763,14 @@ code, pre, .mono {
   gap: 1.25rem;
   text-decoration: none;
   color: inherit;
-  transition: all var(--transition-base);
+  transition: all var(--transition-normal);
 }
 
 .cert-card:hover {
   border-color: var(--border-cyan);
   background: var(--bg-slate-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-glow-cyan);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .cert-icon {
@@ -2517,6 +2520,34 @@ html.js-ready .reveal.is-revealed {
 
   .hero-actions .btn {
     width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
+    overflow-wrap: break-word;
+  }
+
+  .title-sub {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+  }
+
+  .brand-text {
+    max-width: 175px;
+  }
+
+  .brand-role {
+    font-size: 0.6875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .terminal-card {
+    padding: 1rem;
+  }
+
+  .terminal-body {
+    font-size: 0.75rem;
   }
 
   .timeline-meta {
