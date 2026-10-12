@@ -174,6 +174,33 @@ img, svg {
   max-width: 100%;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.icon-sm {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.icon-lg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  flex-shrink: 0;
+  display: block;
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -366,15 +393,30 @@ code, pre, .mono {
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
   background: var(--bg-slate-card);
-  color: var(--text-secondary);
+  color: #e2e8f0;
   transition: all var(--transition-fast);
+}
+
+.btn-icon-ghost svg {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  fill: currentColor;
+  color: #e2e8f0;
+  display: block;
+  transition: color var(--transition-fast);
 }
 
 .btn-icon-ghost:hover {
   background: var(--bg-slate-hover);
-  color: var(--text-primary);
+  color: var(--accent-cyan-light);
   border-color: var(--accent-cyan);
   transform: translateY(-1px);
+}
+
+.btn-icon-ghost:hover svg {
+  color: var(--accent-cyan-light);
 }
 
 .btn-block {
@@ -2350,6 +2392,15 @@ code, pre, .mono {
   transition: all var(--transition-fast);
 }
 
+.footer-icon-btn svg {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  fill: currentColor;
+  display: block;
+}
+
 .footer-icon-btn:hover {
   background: var(--bg-slate-hover);
   color: var(--accent-cyan);
@@ -2552,7 +2603,7 @@ html.js-ready .reveal.is-revealed {
   }
 
   .cert-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
 
@@ -2564,13 +2615,6 @@ html.js-ready .reveal.is-revealed {
   .footer-top {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 4rem;
-  }
-}
-
-/* Large Screens (>= 1280px) */
-@media (min-width: 1280px) {
-  .cert-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -2609,7 +2653,6 @@ html.js-ready .reveal.is-revealed {
 .mt-12 { margin-top: 3rem; }
 
 /* Grid & Flex Container Child Overflow Safety */
-.container,
 .about-grid,
 .about-story-col,
 .about-terminal-col,

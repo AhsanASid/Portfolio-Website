@@ -2,7 +2,6 @@
 
 [![GitHub Pages Deployment](https://github.com/AhsanASid/Portfolio-Website/actions/workflows/deploy.yml/badge.svg)](https://github.com/AhsanASid/Portfolio-Website/actions/workflows/deploy.yml)
 [![Live Site](https://img.shields.io/badge/Live%20Portfolio-AhsanASid.github.io%2FPortfolio--Website-06b6d4?style=flat&logo=github)](https://AhsanASid.github.io/Portfolio-Website/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-3b82f6.svg)](LICENSE)
 [![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-10b981)](#tech-stack)
 
 > **Software Engineer at Mobily Infotech with ~2 years of experience in systems operations and shell automation. Passionate about transitioning into DevOps & Cloud Infrastructure.**
@@ -25,7 +24,6 @@
 - [Education & Certifications](#-education--certifications)
 - [Frontend Architecture](#-frontend-architecture)
 - [Automated GitHub Actions CI/CD](#-automated-github-actions-cicd)
-- [License](#-license)
 
 ---
 
@@ -111,7 +109,6 @@ The website delivers a modern dark aesthetic inspired by obsidian terminal inter
 
 ### Verified Certifications (View on LinkedIn)
 - [AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Amazon Web Services
-- [Python Real-World Applications (100 Projects Portfolio): Automation & Scripting](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Udemy
 - [Big Data Foundations – Level 1 & Hadoop Administration](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — IBM
 - [Career Essentials in Generative AI](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/) — Microsoft & LinkedIn
 
@@ -135,7 +132,6 @@ Portfolio-Website/
 ├── .gitignore                  # Git ignore rules for OS, IDE, and temporary files
 ├── .nojekyll                   # Signals GitHub Pages to bypass Jekyll processing
 ├── index.html                  # Main portfolio single-page application entrypoint
-├── LICENSE                     # MIT License
 └── README.md                   # Repository overview, architecture, and deployment guide
 ```
 
@@ -147,9 +143,3 @@ Deployment is fully automated using GitHub Actions via `.github/workflows/deploy
 1. Static code checkout.
 2. GitHub Pages configuration and asset packaging.
 3. Edge deployment to GitHub Pages.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).

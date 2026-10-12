@@ -107,8 +107,7 @@ Driven by a passion for modern **DevOps & Cloud Infrastructure**, I actively bui
 
 ### Verified Certifications (Viewable on LinkedIn)
 1. **AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)** — Amazon Web Services
-2. **Python Real-World Applications (100 Projects Portfolio): Automation & Scripting** — Udemy
-3. **Big Data Foundations – Level 1 & Hadoop Administration** — IBM
-4. **Career Essentials in Generative AI** — Microsoft & LinkedIn
+2. **Big Data Foundations – Level 1 & Hadoop Administration** — IBM
+3. **Career Essentials in Generative AI** — Microsoft & LinkedIn
 
 *All credentials can be verified at: [linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/](https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/)*
