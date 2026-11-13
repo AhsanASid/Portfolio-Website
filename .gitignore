@@ -33,8 +33,9 @@ pnpm-debug.log*
 *.pem
 *.key
 
-# Build / Dependencies (if any added later)
-node_modules/
+# Agent toolchains
+.agents/
+.impeccable/
 dist/
 build/
 .cache/
