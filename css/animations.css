@@ -10,8 +10,8 @@
 .reveal {
   opacity: 1; /* Fallback for no-js environments */
   transform: none;
-  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
-              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), 
+              transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   will-change: opacity, transform;
 }
 
@@ -106,7 +106,6 @@ html.js-ready .hero-section .reveal {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
-  box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
 }
 
 .nav-link.active {
@@ -115,7 +114,6 @@ html.js-ready .hero-section .reveal {
 
 .nav-link.active .nav-num {
   color: var(--accent-cyan-light);
-  text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
 }
 
 .mobile-nav-link {
@@ -141,14 +139,14 @@ html.js-ready .hero-section .reveal {
    -------------------------------------------------------------------------- */
 .project-card {
   position: relative;
-  transition: transform 0.28s cubic-bezier(0.2, 0, 0, 1), 
-              box-shadow 0.28s ease, 
-              border-color 0.28s ease;
+  transition: transform 0.24s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.24s ease, 
+              border-color 0.24s ease;
   transform-style: preserve-3d;
   will-change: transform;
 }
 
-/* Mouse tracking radial spotlight shine overlay */
+/* Mouse tracking subtle radial shine overlay */
 .project-card::after {
   content: '';
   position: absolute;
@@ -156,39 +154,50 @@ html.js-ready .hero-section .reveal {
   border-radius: inherit;
   background: radial-gradient(
     650px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(6, 182, 212, 0.12),
+    rgba(255, 255, 255, 0.04),
     transparent 42%
   );
   opacity: 0;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.24s ease;
   pointer-events: none;
   z-index: 1;
 }
 
-.project-card:hover::after {
-  opacity: 1;
+/* Gated hover states: fine pointer only, prevents sticky hover on mobile touch */
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover::after {
+    opacity: 1;
+  }
+
+  .project-card:hover {
+    border-color: rgba(6, 182, 212, 0.35);
+    box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px var(--border-cyan);
+  }
+
+  .skill-chip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(6, 182, 212, 0.4);
+    background-color: rgba(6, 182, 212, 0.08);
+  }
+
+  .tech-tag:hover {
+    transform: translateY(-1px);
+    color: var(--accent-cyan-light);
+    border-color: rgba(6, 182, 212, 0.4);
+  }
+
+  .metric-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(6, 182, 212, 0.35);
+    box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7);
+  }
 }
 
-/* Interactive Card Internal Elevation */
-.project-card:hover {
-  border-color: rgba(6, 182, 212, 0.35);
-  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.8), 
-              0 0 30px rgba(6, 182, 212, 0.14);
-}
-
-/* Skill chip & badge interactive hover bump */
+/* Skill chip & badge interactive hover transitions */
 .skill-chip {
   transition: transform var(--transition-fast), 
               border-color var(--transition-fast), 
-              background-color var(--transition-fast),
-              box-shadow var(--transition-fast);
-}
-
-.skill-chip:hover {
-  transform: translateY(-2px);
-  border-color: rgba(6, 182, 212, 0.4);
-  background-color: rgba(6, 182, 212, 0.08);
-  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15);
+              background-color var(--transition-fast);
 }
 
 .tech-tag {
@@ -197,27 +206,14 @@ html.js-ready .hero-section .reveal {
               border-color var(--transition-fast);
 }
 
-.tech-tag:hover {
-  transform: translateY(-1px);
-  color: var(--accent-cyan-light);
-  border-color: rgba(6, 182, 212, 0.4);
-}
-
 /* --------------------------------------------------------------------------
    4. METRIC CARDS HOVER ELEVATION
    -------------------------------------------------------------------------- */
 .metric-card {
   position: relative;
-  transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), 
-              box-shadow 0.25s ease, 
-              border-color 0.25s ease;
-}
-
-.metric-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(6, 182, 212, 0.35);
-  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 
-              0 0 20px rgba(6, 182, 212, 0.12);
+  transition: transform 0.24s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.24s ease, 
+              border-color 0.24s ease;
 }
 
 /* --------------------------------------------------------------------------
@@ -244,7 +240,7 @@ html.js-ready .hero-section .reveal {
   background: var(--accent-emerald) !important;
   color: #0b0f17 !important;
   border-color: var(--accent-emerald) !important;
-  box-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Floating Confirmation Tooltip */
@@ -341,19 +337,10 @@ html.js-ready .hero-section .reveal {
 }
 
 /* --------------------------------------------------------------------------
-   7. HERO TYPEWRITER & CURSOR
+   7. HERO MONOSPACE ACCENTS
    -------------------------------------------------------------------------- */
 .cursor-blink {
-  display: inline-block;
-  color: var(--accent-cyan);
-  font-weight: 700;
-  animation: cursorBlink 1s step-end infinite;
-  margin-left: 2px;
-}
-
-@keyframes cursorBlink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  display: none;
 }
 
 /* --------------------------------------------------------------------------

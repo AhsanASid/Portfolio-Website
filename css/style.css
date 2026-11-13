@@ -71,12 +71,14 @@
   --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 16px 40px -8px rgba(0, 0, 0, 0.6);
   --shadow-card: 0 12px 36px -10px rgba(0, 0, 0, 0.55), 0 0 0 1px var(--border-subtle);
-  --shadow-card-hover: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 24px rgba(6, 182, 212, 0.16), 0 0 0 1px var(--border-cyan);
+  --shadow-card-hover: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px var(--border-cyan);
 
-  /* Transitions & Layout Dimensions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Transitions (Emil Kowalski's high-craft curves) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --transition-fast: 160ms var(--ease-out);
+  --transition-normal: 240ms var(--ease-out);
+  --transition-slow: 350ms var(--ease-out);
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -213,6 +215,17 @@ code, pre, .mono {
   font-family: var(--font-mono);
 }
 
+/* Typography & Flow Quality Floor (Balanced headings, pretty wrapping, comfortable reading length) */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+
+p, .section-subtitle, .spotlight-summary, .about-intro, .narrative-block p, .timeline-content p {
+  text-wrap: pretty;
+  max-width: 68ch;
+}
+
 /* Utility Containers */
 .container {
   width: 100%;
@@ -223,34 +236,29 @@ code, pre, .mono {
   padding-right: 1.5rem;
 }
 
-/* Typography Gradient Helpers */
+/* High-Contrast Solid Accent Typography (Replacing AI gradient text for crisp readability) */
 .text-gradient-cyan {
-  background: linear-gradient(135deg, var(--accent-cyan-light) 0%, var(--accent-cyan) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-cyan-light);
 }
 
 .text-gradient-emerald {
-  background: linear-gradient(135deg, var(--accent-emerald-light) 0%, var(--accent-emerald) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-emerald-light);
 }
 
 .text-gradient-hero {
-  background: var(--grad-hero);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-cyan-light);
 }
 
-/* Ambient Background Glow Layer & Elements */
+.title-sub-crisp {
+  color: #67e8f9;
+  font-weight: 600;
+  display: block;
+  letter-spacing: -0.01em;
+}
+
+/* Ambient Background Glow Layer disabled for clean non-washed-out contrast */
 .ambient-glow-layer {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
+  display: none !important;
 }
 
 .ambient-glow {
@@ -344,15 +352,16 @@ code, pre, .mono {
 }
 
 .btn-primary {
-  background: var(--grad-primary);
+  background: var(--accent-cyan);
   color: #0b0f17;
-  box-shadow: 0 4px 18px rgba(6, 182, 212, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   font-weight: 700;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(6, 182, 212, 0.5);
+  background: var(--accent-cyan-hover);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   filter: brightness(1.05);
 }
 
@@ -455,7 +464,7 @@ code, pre, .mono {
   font-size: 0.875rem;
   background: rgba(16, 185, 129, 0.08);
   border: 1px solid rgba(16, 185, 129, 0.3);
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .status-text {
@@ -543,7 +552,7 @@ code, pre, .mono {
   height: 36px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   flex-shrink: 0;
 }
 
@@ -566,7 +575,7 @@ code, pre, .mono {
 }
 
 .brand-role {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--accent-cyan);
   font-family: var(--font-mono);
   font-weight: 500;
@@ -860,18 +869,23 @@ code, pre, .mono {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid var(--border-cyan);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid var(--border-subtle);
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-sm);
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+  box-shadow: var(--shadow-sm);
   flex-wrap: wrap;
 }
 
 .role-prefix {
   font-size: 0.8125rem;
   color: var(--text-muted);
+}
+
+.role-spec {
+  font-size: 0.8125rem;
+  color: var(--accent-cyan-light);
 }
 
 .typing-text-wrapper {
@@ -1271,13 +1285,11 @@ code, pre, .mono {
   border-color: rgba(6, 182, 212, 0.35);
   background: rgba(6, 182, 212, 0.08);
   color: #ffffff;
-  box-shadow: 0 0 10px rgba(6, 182, 212, 0.08);
 }
 
 .skill-highlight:hover {
   border-color: var(--accent-cyan);
   background: rgba(6, 182, 212, 0.14);
-  box-shadow: 0 0 16px rgba(6, 182, 212, 0.2);
 }
 
 .star,
@@ -1328,7 +1340,7 @@ code, pre, .mono {
 
 .project-card:hover {
   border-color: rgba(6, 182, 212, 0.35);
-  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.75), 0 0 28px rgba(6, 182, 212, 0.12);
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px var(--border-cyan);
   transform: translateY(-2px);
 }
 
@@ -1414,10 +1426,11 @@ code, pre, .mono {
 }
 
 .narrative-block {
-  background: rgba(11, 15, 23, 0.55);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.25rem;
+  background: transparent;
+  border: none;
+  border-left: 2px solid var(--border-light);
+  border-radius: 0;
+  padding: 0.25rem 0 0.25rem 1rem;
 }
 
 .block-label {
@@ -1498,13 +1511,11 @@ code, pre, .mono {
 .arch-highlight {
   border-color: rgba(6, 182, 212, 0.4);
   background: rgba(6, 182, 212, 0.1);
-  box-shadow: 0 0 12px rgba(6, 182, 212, 0.15);
 }
 
 .arch-highlight-emerald {
   border-color: rgba(16, 185, 129, 0.4);
   background: rgba(16, 185, 129, 0.1);
-  box-shadow: 0 0 12px rgba(16, 185, 129, 0.15);
 }
 
 .arch-arrow {
@@ -1628,9 +1639,9 @@ code, pre, .mono {
 /* Spotlight: TCS CodeVita Qualifier Card */
 .spotlight-card {
   padding: 2.25rem;
-  background: linear-gradient(135deg, rgba(20, 30, 51, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%);
+  background: var(--bg-slate-card);
   border: 1px solid rgba(245, 158, 11, 0.35);
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.1), var(--shadow-card);
+  box-shadow: var(--shadow-card);
   margin-bottom: 3rem;
 }
 
@@ -1652,12 +1663,11 @@ code, pre, .mono {
   width: 90px;
   height: 90px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(6, 182, 212, 0.15) 100%);
-  border: 2px solid rgba(245, 158, 11, 0.5);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 24px rgba(245, 158, 11, 0.25);
 }
 
 .trophy-hex {
@@ -1947,19 +1957,19 @@ code, pre, .mono {
 }
 
 .marker-dot {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  box-shadow: 0 0 12px var(--accent-cyan);
-  border: 3px solid var(--bg-obsidian);
+  border: 2px solid var(--bg-obsidian);
+  box-shadow: 0 0 0 2px var(--accent-cyan);
   z-index: 2;
   margin-top: 1.5rem;
 }
 
 .marker-dot-edu {
   background: var(--accent-emerald);
-  box-shadow: 0 0 12px var(--accent-emerald);
+  box-shadow: 0 0 0 2px var(--accent-emerald);
 }
 
 .marker-line {
@@ -2126,16 +2136,16 @@ code, pre, .mono {
   line-height: 1.5;
 }
 
-/* Email Copy Box */
+/* Email Copy Box (Streamlined clipboard input field) */
 .email-copy-box {
-  background: #090d15;
+  background: rgba(15, 23, 42, 0.45);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.15rem;
 }
 
 .email-label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -2783,10 +2793,8 @@ html.js-ready .hero-section .reveal {
   }
 
   .brand-role {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .project-card {

@@ -45,12 +45,8 @@
   <!-- Screen reader skip link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Ambient Background Glow Layer (Fixed viewport containment prevents mobile horizontal scrolling) -->
-  <div class="ambient-glow-layer" aria-hidden="true">
-    <div class="ambient-glow ambient-glow-1"></div>
-    <div class="ambient-glow ambient-glow-2"></div>
-    <div class="ambient-glow ambient-glow-3"></div>
-  </div>
+  <!-- Ambient Background Glow Layer removed for clean, non-washed-out systems aesthetic -->
+  <div class="ambient-glow-layer" aria-hidden="true" style="display: none;"></div>
 
   <!-- ========================================================================= -->
   <!-- HEADER & NAVIGATION -->
@@ -73,7 +69,7 @@
         </span>
         <div class="brand-text">
           <span class="brand-name">Ahsan Ahmad Siddiqui</span>
-          <span class="brand-role">Software Engineer &bull; Aspiring DevOps</span>
+          <span class="brand-role">Software Engineer<span class="hidden-mobile"> &bull; Aspiring DevOps</span></span>
         </div>
       </a>
 
@@ -178,27 +174,18 @@
         <!-- Hero Headline & Intro -->
         <div class="hero-content">
           <p class="hero-greeting mono reveal" data-reveal="fade-up" data-delay="100">
-            <span class="accent-terminal">&gt;</span> Hello world, my name is
+            <span class="accent-terminal">&gt;</span> Systems Operations &bull; DevOps &bull; Cloud Infrastructure
           </p>
           
           <h1 class="hero-title reveal" data-reveal="fade-up" data-delay="200">
             <span class="title-name">Ahsan Ahmad Siddiqui.</span>
-            <span class="title-sub text-gradient-hero">Software Engineering &bull; Systems Operations &bull; Cloud.</span>
+            <span class="title-sub title-sub-crisp">Software Engineering &bull; Systems Operations &bull; Cloud.</span>
           </h1>
 
-          <!-- Role Typing Pill Hook -->
+          <!-- Core Competencies Pill -->
           <div class="hero-role-pill reveal" data-reveal="fade-up" data-delay="300">
-            <span class="role-prefix mono">Specializing in:</span>
-            <span class="typing-text-wrapper">
-              <span class="typing-text mono font-semibold text-cyan-400" 
-                    data-words='["Software Engineering", "Aspiring DevOps & Cloud", "Linux & Shell Automation", "Infrastructure as Code (Terraform)", "Docker & Kubernetes Practice"]'
-                    data-typing-speed="80" 
-                    data-backspace-speed="40" 
-                    data-pause-delay="2200">
-                Software Engineering
-              </span>
-              <span class="cursor-blink" aria-hidden="true">|</span>
-            </span>
+            <span class="role-prefix mono">Focus:</span>
+            <span class="role-spec mono font-semibold">Enterprise Systems Operations &bull; Shell Automation &bull; Cloud Infrastructure</span>
           </div>
 
           <!-- Summary Elevator Statement -->
