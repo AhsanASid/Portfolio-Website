@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import CloudOpsProject from '../components/CloudOpsProject.astro';
+import CaseStudies from '../components/CaseStudies.astro';
+import Skills from '../components/Skills.astro';
+import CertificationsEducation from '../components/CertificationsEducation.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<BaseLayout
+  title="Ahsan Ahmad Siddiqui | Software Engineer @ Mobily Infotech | Aspiring DevOps Engineer"
+  description="Software Engineer with ~2 years of experience in systems operations, automation, and cloud platforms at Mobily Infotech in Bengaluru. Hands-on DevOps platform architecture spanning AWS, Terraform, Kubernetes, Argo Rollouts, and 17s Velero disaster recovery."
+>
+  <Header />
+
+  <main id="main-content" class="flex-grow">
+    <div class="reveal-init">
+      <Hero />
+    </div>
+
+    <div class="reveal-init">
+      <About />
+    </div>
+
+    <div class="reveal-init">
+      <Experience />
+    </div>
+
+    <div class="reveal-init">
+      <CloudOpsProject />
+    </div>
+
+    <div class="reveal-init">
+      <CaseStudies />
+    </div>
+
+    <div class="reveal-init">
+      <Skills />
+    </div>
+
+    <div class="reveal-init">
+      <CertificationsEducation />
+    </div>
+
+    <div class="reveal-init">
+      <Contact />
+    </div>
+  </main>
+</BaseLayout>

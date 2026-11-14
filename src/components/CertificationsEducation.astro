@@ -1,0 +1,129 @@
+---
+const certifications = [
+  {
+    title: "AWS Educate: Getting Started with Storage (Amazon S3, EBS, EFS)",
+    issuer: "Amazon Web Services (AWS)",
+    year: "2024",
+    verifyUrl: "https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/"
+  },
+  {
+    title: "Big Data Foundations – Level 1 & Hadoop Administration",
+    issuer: "IBM",
+    year: "2024",
+    verifyUrl: "https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/"
+  },
+  {
+    title: "Career Essentials in Generative AI",
+    issuer: "Microsoft & LinkedIn",
+    year: "2024",
+    verifyUrl: "https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/details/certifications/"
+  }
+];
+
+const coursework = [
+  "Computer Networks",
+  "Operating Systems",
+  "Database Management Systems",
+  "Linux & Unix Systems",
+  "Software Engineering"
+];
+---
+
+<section id="certifications" class="py-20 md:py-28 border-b border-border-subtle bg-bg-surface/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <!-- Certifications Column (7 cols) -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 font-mono text-xs text-accent">
+            <span>06</span>
+            <span class="w-8 h-[1px] bg-accent/40"></span>
+            <span class="tracking-widest uppercase">CERTIFICATIONS</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-text-primary">
+            Verified Credentials
+          </h2>
+          <p class="text-xs font-mono text-text-tertiary">
+            Directly verifiable via LinkedIn Certifications profile
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          {certifications.map((cert) => (
+            <a
+              href={cert.verifyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block p-4 sm:p-5 rounded-xl bg-bg-surface border border-border-subtle hover:border-border-active transition-all card-hover group"
+              aria-label={`Verify ${cert.title} on LinkedIn`}
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div class="space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                    <span class="font-mono text-xs text-text-tertiary">{cert.issuer}</span>
+                  </div>
+                  <h3 class="font-display text-base font-semibold text-text-primary group-hover:text-accent transition-colors">
+                    {cert.title}
+                  </h3>
+                </div>
+
+                <div class="flex flex-col items-end gap-1 font-mono text-xs text-text-tertiary shrink-0">
+                  <span class="text-text-secondary">{cert.year}</span>
+                  <span class="text-[11px] text-accent flex items-center gap-0.5 group-hover:underline">
+                    Verify ↗
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Education Column (5 cols) -->
+      <div class="lg:col-span-5 space-y-8">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 font-mono text-xs text-accent">
+            <span>07</span>
+            <span class="w-8 h-[1px] bg-accent/40"></span>
+            <span class="tracking-widest uppercase">EDUCATION</span>
+          </div>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-text-primary">
+            Academic Background
+          </h2>
+          <p class="text-xs font-mono text-text-tertiary">
+            Undergraduate Engineering Degree
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-bg-surface border border-border-subtle shadow-sm space-y-5">
+          <div class="space-y-1.5 pb-4 border-b border-border-subtle">
+            <div class="font-mono text-xs text-accent font-semibold uppercase">2020 – 2024</div>
+            <h3 class="font-display text-xl font-bold text-text-primary">
+              B.Tech, Information Technology
+            </h3>
+            <div class="text-sm text-text-secondary leading-snug">
+              Shri Ramswaroop Memorial College of Engineering and Management (SRMCEM)
+            </div>
+            <div class="text-xs font-mono text-text-tertiary">
+              Lucknow, Uttar Pradesh, India
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <div class="text-xs font-mono text-text-tertiary uppercase tracking-wider">
+              Relevant Coursework Focus
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {coursework.map((course) => (
+                <span class="px-2.5 py-1 rounded-md bg-bg-subtle text-text-primary border border-border-subtle text-xs font-mono">
+                  {course}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

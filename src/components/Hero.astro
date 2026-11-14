@@ -1,0 +1,168 @@
+---
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const resumePath = `${baseUrl}resume/Ahsan-Ahmad-Siddiqui-Resume.pdf`;
+---
+
+<section class="relative pt-12 pb-20 md:pt-20 md:pb-28 border-b border-border-subtle overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Main Narrative Column (8 cols) -->
+      <div class="lg:col-span-8 space-y-6">
+        <!-- Location & Status Tagline -->
+        <div class="flex flex-wrap items-center gap-3 font-mono text-xs text-text-tertiary">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-bg-surface border border-border-subtle text-text-secondary">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+            <span>BENGALURU, KARNATAKA, INDIA</span>
+          </span>
+          <span class="text-border-active">/</span>
+          <span class="tracking-wide">SYSTEMS OPERATIONS &rarr; CLOUD INFRASTRUCTURE</span>
+        </div>
+
+        <!-- Monolithic Nameplate -->
+        <div class="space-y-3">
+          <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-text-primary leading-[1.08]">
+            Ahsan Ahmad Siddiqui
+          </h1>
+          <p class="font-display text-xl sm:text-2xl text-accent font-semibold tracking-tight">
+            Software Engineer @ Mobily Infotech | Aspiring DevOps &amp; Cloud Engineer
+          </p>
+        </div>
+
+        <!-- Value Statement / Tagline -->
+        <p class="text-base sm:text-lg text-text-secondary max-w-2xl leading-relaxed">
+          Software Engineer with ~2 years of experience in systems operations, automation, and cloud platforms. Eliminating enterprise operational toil through parallelized shell scripting, optimizing Oracle SQL queries, and architecting hands-on AWS, Kubernetes, and GitOps cloud platforms.
+        </p>
+
+        <!-- Action CTAs -->
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a
+            href="#projects"
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-accent text-zinc-950 font-mono text-sm font-bold hover:opacity-95 btn-press transition-all shadow-sm"
+          >
+            <span>View Featured Architecture</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+
+          <a
+            href={resumePath}
+            download="Ahsan-Ahmad-Siddiqui-Resume.pdf"
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-bg-surface border border-border-subtle hover:border-border-active text-text-primary font-mono text-sm font-semibold btn-press transition-colors"
+          >
+            <span>Download Resume</span>
+            <svg class="w-4 h-4 text-text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Direct Social & Email Links -->
+        <div class="pt-4 flex flex-wrap items-center gap-6 font-mono text-xs text-text-secondary">
+          <a
+            href="https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 hover:text-text-primary transition-colors"
+            aria-label="Ahsan LinkedIn profile"
+          >
+            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.5a1.63 1.63 0 1 0 1.63 1.63A1.63 1.63 0 0 0 7.86 6.5Z"/>
+            </svg>
+            <span>LinkedIn ↗</span>
+          </a>
+
+          <a
+            href="https://github.com/AhsanASid"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 hover:text-text-primary transition-colors"
+            aria-label="Ahsan GitHub profile"
+          >
+            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub ↗</span>
+          </a>
+
+          <button
+            type="button"
+            id="hero-copy-email-btn"
+            data-email="ahsansid001@gmail.com"
+            class="inline-flex items-center gap-1.5 hover:text-text-primary transition-colors focus:outline-none"
+            aria-label="Copy ahsansid001@gmail.com to clipboard"
+          >
+            <svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+            <span id="hero-copy-email-text">ahsansid001@gmail.com</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Telemetry & Ops Card (4 cols) -->
+      <div class="lg:col-span-4 w-full">
+        <div class="p-5 rounded-xl bg-bg-surface border border-border-subtle shadow-sm space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-border-subtle text-xs font-mono text-text-tertiary">
+            <span class="font-semibold text-text-primary flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-accent"></span>
+              PLATFORM_PROFILE
+            </span>
+            <span>VERIFIED_2026</span>
+          </div>
+
+          <div class="space-y-3 font-mono text-xs">
+            <div class="flex justify-between items-center py-1 border-b border-border-subtle/50">
+              <span class="text-text-tertiary">CURRENT_ROLE</span>
+              <span class="text-text-primary font-medium text-right">Software Engineer</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-border-subtle/50">
+              <span class="text-text-tertiary">ORGANIZATION</span>
+              <span class="text-text-primary font-medium text-right">Mobily Infotech</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-border-subtle/50">
+              <span class="text-text-tertiary">EXPERIENCE</span>
+              <span class="text-text-primary font-medium text-right tabular-nums">~2 Years Hands-on</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-border-subtle/50">
+              <span class="text-text-tertiary">CORE_FOCUS</span>
+              <span class="text-accent font-medium text-right">SysOps &rarr; Cloud / SRE</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span class="text-text-tertiary">ON_CALL_OPS</span>
+              <span class="text-emerald-500 font-medium text-right">24/7 Production SLA</span>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-border-subtle bg-bg-subtle/50 p-3 rounded-lg">
+            <div class="text-[11px] font-mono text-text-tertiary uppercase tracking-wider mb-1">Target Opportunities</div>
+            <p class="text-xs text-text-secondary leading-snug">
+              Associate / Junior DevOps &amp; Cloud Engineer · Systems Operations, Automation &amp; Junior SRE · Early-Career Software Engineer (Infrastructure)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Copy Email Toast Helper
+  const copyBtn = document.getElementById('hero-copy-email-btn');
+  const copyText = document.getElementById('hero-copy-email-text');
+  copyBtn?.addEventListener('click', async () => {
+    const email = copyBtn.getAttribute('data-email') || 'ahsansid001@gmail.com';
+    try {
+      await navigator.clipboard.writeText(email);
+      if (copyText) {
+        const originalText = copyText.innerText;
+        copyText.innerText = 'Copied to clipboard!';
+        setTimeout(() => {
+          copyText.innerText = originalText;
+        }, 2200);
+      }
+    } catch (err) {
+      window.location.href = `mailto:${email}`;
+    }
+  });
+</script>

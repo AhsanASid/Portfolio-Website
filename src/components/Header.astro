@@ -1,0 +1,131 @@
+---
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const resumePath = `${baseUrl}resume/Ahsan-Ahmad-Siddiqui-Resume.pdf`;
+---
+
+<header class="sticky top-0 z-40 w-full border-b border-border-subtle bg-bg-base/85 backdrop-blur-md transition-colors duration-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Brand / Monogram & Status Pill -->
+    <div class="flex items-center gap-4">
+      <a href={`${baseUrl}`} class="group flex items-center gap-2.5 focus:outline-none" aria-label="Ahsan A. Siddiqui, Software Engineer - Home">
+        <div class="w-9 h-9 rounded-lg bg-bg-surface border border-border-subtle group-hover:border-accent flex items-center justify-center transition-colors">
+          <span class="font-display font-bold text-accent text-sm tracking-tight">AS</span>
+        </div>
+        <div class="hidden sm:flex flex-col">
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-text-primary">Ahsan A. Siddiqui</span>
+          <span class="text-[11px] font-mono text-text-tertiary">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Availability Badge -->
+      <div class="hidden md:inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-bg-surface border border-border-subtle text-[11px] font-mono text-text-secondary">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="tracking-tight text-text-secondary">Open to DevOps &amp; Cloud Roles</span>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex items-center gap-6" aria-label="Main Navigation">
+      <a href="#about" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">About</a>
+      <a href="#experience" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Experience</a>
+      <a href="#projects" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Projects</a>
+      <a href="#skills" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Skills</a>
+      <a href="#certifications" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Certifications</a>
+      <a href="#contact" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">Contact</a>
+    </nav>
+
+    <!-- Controls (Theme Toggle + Resume CTA) -->
+    <div class="flex items-center gap-3">
+      <!-- Theme Switcher -->
+      <button
+        id="theme-toggle"
+        type="button"
+        class="w-9 h-9 rounded-lg bg-bg-surface border border-border-subtle hover:border-border-active flex items-center justify-center text-text-secondary hover:text-text-primary transition-colors btn-press focus:outline-none"
+        aria-label="Toggle visual theme"
+      >
+        <!-- Sun Icon (Light Mode trigger) -->
+        <svg id="theme-icon-sun" class="w-4 h-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+        <!-- Moon Icon (Dark Mode trigger) -->
+        <svg id="theme-icon-moon" class="w-4 h-4 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+
+      <!-- Resume Download CTA -->
+      <a
+        href={resumePath}
+        download="Ahsan-Ahmad-Siddiqui-Resume.pdf"
+        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-accent text-zinc-950 font-mono text-xs font-bold hover:opacity-90 btn-press transition-opacity shadow-sm"
+        aria-label="Download Ahsan Ahmad Siddiqui Resume (PDF)"
+      >
+        <span>Resume</span>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17" />
+        </svg>
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="lg:hidden w-9 h-9 rounded-lg bg-bg-surface border border-border-subtle flex items-center justify-center text-text-secondary hover:text-text-primary"
+        aria-label="Toggle mobile menu"
+        aria-expanded="false"
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden border-b border-border-subtle bg-bg-surface px-4 py-4 space-y-3">
+    <a href="#about" class="block text-sm font-medium text-text-secondary hover:text-text-primary">About</a>
+    <a href="#experience" class="block text-sm font-medium text-text-secondary hover:text-text-primary">Experience</a>
+    <a href="#projects" class="block text-sm font-medium text-text-secondary hover:text-text-primary">Projects</a>
+    <a href="#skills" class="block text-sm font-medium text-text-secondary hover:text-text-primary">Skills</a>
+    <a href="#certifications" class="block text-sm font-medium text-text-secondary hover:text-text-primary">Certifications</a>
+    <a href="#contact" class="block text-sm font-medium text-text-secondary hover:text-text-primary">Contact</a>
+  </div>
+</header>
+
+<script>
+  // Theme Toggle Handler
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.contains('dark');
+    if (isDark) {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  // Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuBtn?.addEventListener('click', () => {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', String(!isExpanded));
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu on anchor click
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>

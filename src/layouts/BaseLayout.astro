@@ -1,0 +1,127 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Ahsan Ahmad Siddiqui | Software Engineer @ Mobily Infotech | Aspiring DevOps Engineer",
+  description = "Early-career Software Engineer at Mobily Infotech in Bengaluru with ~2 years of hands-on experience in enterprise systems operations, automation, and release support. Specializing in shell automation, Oracle SQL optimization, and modern DevOps platforms with AWS, Terraform, and Kubernetes.",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://ahsanasid.github.io');
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const ogImageURL = new URL(`${baseUrl}images/og-image.png`, Astro.site || 'https://ahsanasid.github.io').href;
+const faviconURL = `${baseUrl}favicon.svg`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahsan Ahmad Siddiqui",
+  "alternateName": "Ahsan",
+  "jobTitle": "Software Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Mobily Infotech India Pvt Ltd"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "addressCountry": "India"
+  },
+  "email": "mailto:ahsansid001@gmail.com",
+  "url": canonicalURL.href,
+  "sameAs": [
+    "https://www.linkedin.com/in/ahsan-ahmad-siddiqui-594120201/",
+    "https://github.com/AhsanASid"
+  ],
+  "knowsAbout": [
+    "Systems Operations",
+    "Shell Scripting",
+    "Oracle BRM",
+    "Oracle SQL Optimization",
+    "Cloud Infrastructure",
+    "DevOps",
+    "Amazon Web Services (AWS)",
+    "Terraform",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Argo Rollouts",
+    "Site Reliability Engineering"
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href={faviconURL} />
+    <meta name="theme-color" content="#0D0F11" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- Theme Initialization (prevents flash) -->
+    <script is:inline>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        } else {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg-base text-text-primary antialiased min-h-screen flex flex-col selection:bg-accent selection:text-white">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-accent text-white font-mono text-sm rounded shadow-lg">
+      Skip to main content
+    </a>
+
+    <slot />
+
+    <!-- IntersectionObserver for smooth scroll reveals -->
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal-init').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

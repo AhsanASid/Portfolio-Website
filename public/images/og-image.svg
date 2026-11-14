@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0F11"/>
+      <stop offset="100%" stop-color="#15181C"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22272E" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Border Frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="16" fill="none" stroke="#22272E" stroke-width="2"/>
+
+  <!-- Top Telemetry Header -->
+  <rect x="70" y="70" width="14" height="14" rx="7" fill="#F97316"/>
+  <text x="96" y="82" font-family="monospace" font-size="14" fill="#94A3B8" letter-spacing="2">OPERATIONAL · SYSTEMS &amp; INFRASTRUCTURE</text>
+  <text x="1090" y="82" font-family="monospace" font-size="14" fill="#64748B" text-anchor="end">BENGALURU, IN</text>
+
+  <line x1="70" y1="110" x2="1130" y2="110" stroke="#22272E" stroke-width="1"/>
+
+  <!-- Name & Headline -->
+  <text x="70" y="210" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="64" font-weight="700" fill="#F3F4F6" letter-spacing="-1">Ahsan Ahmad Siddiqui</text>
+  <text x="70" y="275" font-family="-apple-system, sans-serif" font-size="28" font-weight="500" fill="#F97316">Software Engineer @ Mobily Infotech</text>
+  <text x="70" y="320" font-family="-apple-system, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">Systems Operations · Automation · Aspiring DevOps &amp; Cloud Engineer</text>
+
+  <!-- Metric Badges Row -->
+  <g transform="translate(70, 390)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="310" height="110" rx="10" fill="#181B20" stroke="#262D36" stroke-width="1"/>
+    <text x="24" y="45" font-family="monospace" font-size="34" font-weight="700" fill="#F3F4F6">50+ Hours</text>
+    <text x="24" y="80" font-family="-apple-system, sans-serif" font-size="15" fill="#94A3B8">Monthly Toil Eliminated</text>
+
+    <!-- Box 2 -->
+    <rect x="330" y="0" width="310" height="110" rx="10" fill="#181B20" stroke="#262D36" stroke-width="1"/>
+    <text x="354" y="45" font-family="monospace" font-size="34" font-weight="700" fill="#F3F4F6">17s Recovery</text>
+    <text x="354" y="80" font-family="-apple-system, sans-serif" font-size="15" fill="#94A3B8">Velero Disaster Recovery</text>
+
+    <!-- Box 3 -->
+    <rect x="660" y="0" width="310" height="110" rx="10" fill="#181B20" stroke="#262D36" stroke-width="1"/>
+    <text x="684" y="45" font-family="monospace" font-size="34" font-weight="700" fill="#F3F4F6">24/7 Ops &amp; SLA</text>
+    <text x="684" y="80" font-family="-apple-system, sans-serif" font-size="15" fill="#94A3B8">Enterprise Billing Support</text>
+  </g>
+
+  <!-- Footer Tagline -->
+  <line x1="70" y1="535" x2="1130" y2="535" stroke="#22272E" stroke-width="1"/>
+  <text x="70" y="560" font-family="monospace" font-size="14" fill="#64748B">STACK: AWS · TERRAFORM · KUBERNETES · ARGO ROLLOUTS · SHELL SCRIPTING · ORACLE SQL</text>
+  <text x="1130" y="560" font-family="monospace" font-size="14" fill="#F97316" text-anchor="end">ahsanasid.github.io/Portfolio-Website</text>
+</svg>

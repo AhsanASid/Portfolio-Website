@@ -1,0 +1,271 @@
+---
+---
+
+<section id="projects" class="py-20 md:py-28 border-b border-border-subtle bg-bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="space-y-12">
+      <!-- Section Header -->
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 font-mono text-xs text-accent">
+          <span>03</span>
+          <span class="w-8 h-[1px] bg-accent/40"></span>
+          <span class="tracking-widest uppercase">FEATURED ARCHITECTURE</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-text-primary">
+          CloudOps: Automated Cloud Infrastructure &amp; Progressive Delivery
+        </h2>
+        <p class="font-mono text-sm text-accent font-medium">
+          5-Phase DevOps Project: AWS, Terraform, Kubernetes, Argo Rollouts &amp; Grafana
+        </p>
+      </div>
+
+      <!-- Main Project Dossier Container -->
+      <div class="p-6 sm:p-8 lg:p-10 rounded-2xl bg-bg-surface border border-border-subtle shadow-sm space-y-8">
+        <!-- Quantified Metrics Callout Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-8 border-b border-border-subtle">
+          <div class="p-4 rounded-xl bg-bg-subtle/60 border border-border-subtle space-y-1">
+            <div class="font-mono text-xs text-text-tertiary uppercase">DR Recovery Time</div>
+            <div class="font-mono text-3xl sm:text-4xl font-bold text-accent tabular-nums">17s</div>
+            <div class="text-[11px] text-text-secondary">Full namespace restored</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-bg-subtle/60 border border-border-subtle space-y-1">
+            <div class="font-mono text-xs text-text-tertiary uppercase">Architecture Phases</div>
+            <div class="font-mono text-3xl sm:text-4xl font-bold text-text-primary tabular-nums">5</div>
+            <div class="text-[11px] text-text-secondary">Modular, cost-conscious</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-bg-subtle/60 border border-border-subtle space-y-1">
+            <div class="font-mono text-xs text-text-tertiary uppercase">Canary Traffic Steps</div>
+            <div class="font-mono text-2xl sm:text-3xl font-bold text-text-primary tabular-nums">25% &rarr; 100%</div>
+            <div class="text-[11px] text-text-secondary">Automated rollback checks</div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-bg-subtle/60 border border-border-subtle space-y-1">
+            <div class="font-mono text-xs text-text-tertiary uppercase">Container Security</div>
+            <div class="font-mono text-3xl sm:text-4xl font-bold text-emerald-500">Non-Root</div>
+            <div class="text-[11px] text-text-secondary">Immutable SHA image tags</div>
+          </div>
+        </div>
+
+        <!-- Problem & Solution Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-3">
+            <div class="font-mono text-xs font-semibold uppercase text-accent tracking-wider">The Problem</div>
+            <p class="text-sm sm:text-base text-text-secondary leading-relaxed">
+              Bridging the gap between software engineering and modern DevOps requires end-to-end hands-on experience in cloud provisioning, containerized CI/CD, progressive canary rollouts, observability, and disaster recovery.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <div class="font-mono text-xs font-semibold uppercase text-accent tracking-wider">The Solution</div>
+            <p class="text-sm sm:text-base text-text-secondary leading-relaxed">
+              Built an end-to-end, cost-conscious cloud platform across 5 modular phases: (1) Modular AWS VPC &amp; EKS in Terraform with S3 backend locking; (2) Hardened Python microservice with GitHub Actions CI/CD to GHCR; (3) Prometheus, Loki, Promtail, and Grafana datasources-as-code; (4) Argo Rollouts canary traffic shifting (25% &rarr; 100%) on kind; (5) Velero &amp; in-cluster MinIO backup executing full namespace restoration in 17 seconds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Architecture Diagram Header -->
+        <div class="pt-4 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="font-mono text-xs font-semibold text-text-primary uppercase tracking-wider flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-accent"></span>
+              SYSTEM_ARCHITECTURE_TOPOLOGY (SELECT PHASE)
+            </div>
+            <span class="font-mono text-[11px] text-text-tertiary hidden sm:inline">INTERACTIVE TRACER</span>
+          </div>
+
+          <!-- Phase Navigation Buttons -->
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="phase-buttons" role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-phase="1"
+              class="phase-btn active px-3 py-2.5 rounded-lg border text-left font-mono text-xs transition-all btn-press bg-accent/10 border-accent text-accent"
+            >
+              <div class="text-[10px] text-text-tertiary">PHASE 01</div>
+              <div class="font-semibold truncate">AWS &amp; Terraform</div>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-phase="2"
+              class="phase-btn px-3 py-2.5 rounded-lg border text-left font-mono text-xs transition-all btn-press bg-bg-subtle border-border-subtle text-text-secondary hover:text-text-primary"
+            >
+              <div class="text-[10px] text-text-tertiary">PHASE 02</div>
+              <div class="font-semibold truncate">Container CI/CD</div>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-phase="3"
+              class="phase-btn px-3 py-2.5 rounded-lg border text-left font-mono text-xs transition-all btn-press bg-bg-subtle border-border-subtle text-text-secondary hover:text-text-primary"
+            >
+              <div class="text-[10px] text-text-tertiary">PHASE 03</div>
+              <div class="font-semibold truncate">Observability</div>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-phase="4"
+              class="phase-btn px-3 py-2.5 rounded-lg border text-left font-mono text-xs transition-all btn-press bg-bg-subtle border-border-subtle text-text-secondary hover:text-text-primary"
+            >
+              <div class="text-[10px] text-text-tertiary">PHASE 04</div>
+              <div class="font-semibold truncate">Argo Canaries</div>
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-phase="5"
+              class="phase-btn px-3 py-2.5 rounded-lg border text-left font-mono text-xs transition-all btn-press bg-bg-subtle border-border-subtle text-text-secondary hover:text-text-primary"
+            >
+              <div class="text-[10px] text-text-tertiary">PHASE 05</div>
+              <div class="font-semibold truncate">Velero DR (17s)</div>
+            </button>
+          </div>
+
+          <!-- Dynamic Phase Spec Display Panel -->
+          <div class="p-5 rounded-xl bg-bg-subtle border border-border-subtle min-h-[140px] transition-all">
+            <div id="phase-content-1" class="phase-content space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono text-accent">
+                <span class="font-semibold">PHASE 01: MODULAR AWS VPC &amp; EKS INFRASTRUCTURE AS CODE</span>
+                <span class="text-text-tertiary">TERRAFORM 1.x</span>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed">
+                Modular Terraform VPC provisioned across 2 Availability Zones with encrypted Amazon S3 remote state and native locking (<code class="text-xs font-mono bg-bg-surface px-1.5 py-0.5 rounded text-accent">use_lockfile</code>). Cost-conscious AWS architecture utilizing IAM least-privilege policies and SSM Parameter Store for zero-leak secrets management.
+              </p>
+            </div>
+
+            <div id="phase-content-2" class="phase-content hidden space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono text-accent">
+                <span class="font-semibold">PHASE 02: HARDENED PYTHON MICROSERVICE &amp; GHCR CI/CD</span>
+                <span class="text-text-tertiary">DOCKER &amp; GITHUB ACTIONS</span>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed">
+                Hardened non-root Python microservice with multi-stage Docker builds minimizing attack surface and image bloat. Automated GitHub Actions CI/CD pipeline builds and tests on every push, publishing immutable commit-SHA tagged images to GitHub Container Registry (GHCR) with <code class="text-xs font-mono bg-bg-surface px-1.5 py-0.5 rounded text-accent">/healthz</code> liveness probes.
+              </p>
+            </div>
+
+            <div id="phase-content-3" class="phase-content hidden space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono text-accent">
+                <span class="font-semibold">PHASE 03: FULL-STACK OBSERVABILITY &amp; TELEMETRY PIPELINE</span>
+                <span class="text-text-tertiary">PROMETHEUS, GRAFANA, LOKI</span>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed">
+                Full-stack observability stack deploying Prometheus metrics scraping and single-binary Loki log streaming with Promtail agents. Provisioned Grafana dashboards-as-code and datasources for automated health monitoring, container memory limits, and request latency tracking.
+              </p>
+            </div>
+
+            <div id="phase-content-4" class="phase-content hidden space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono text-accent">
+                <span class="font-semibold">PHASE 04: PROGRESSIVE CANARY TRAFFIC SHIFTING ON KIND</span>
+                <span class="text-text-tertiary">ARGO ROLLOUTS &amp; K8S</span>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed">
+                Argo Rollouts implementation on kind local Kubernetes cluster with multi-step progressive traffic shifting (25% &rarr; 50% &rarr; 75% &rarr; 100%). Automated health probe validation during each step with instant rollback triggers if error budgets or failed readiness checks are detected.
+              </p>
+            </div>
+
+            <div id="phase-content-5" class="phase-content hidden space-y-2">
+              <div class="flex items-center justify-between text-xs font-mono text-accent">
+                <span class="font-semibold">PHASE 05: IN-CLUSTER DISASTER RECOVERY &amp; BACKUP</span>
+                <span class="text-text-tertiary">VELERO &amp; MINIO S3</span>
+              </div>
+              <p class="text-sm text-text-secondary leading-relaxed">
+                Disaster recovery pipeline combining Velero with an in-cluster S3-compatible MinIO object store. Validated end-to-end failure drills: completely dropped application namespaces and executed full restoration with 100% data integrity verified in exactly 17 seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural Highlights -->
+        <div class="space-y-4 pt-4 border-t border-border-subtle">
+          <div class="font-mono text-xs font-semibold uppercase text-accent tracking-wider">System Architecture Highlights</div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-text-secondary">
+            <li class="flex items-start gap-2.5 p-3 rounded-lg bg-bg-subtle/40 border border-border-subtle">
+              <span class="text-accent mt-0.5 font-mono text-xs">01</span>
+              <span>Modular Terraform VPC across 2 AZs with encrypted S3 state and native locking (<code class="font-mono text-xs text-accent">use_lockfile</code>)</span>
+            </li>
+            <li class="flex items-start gap-2.5 p-3 rounded-lg bg-bg-subtle/40 border border-border-subtle">
+              <span class="text-accent mt-0.5 font-mono text-xs">02</span>
+              <span>Hardened non-root Python microservice with automated GitHub Actions CI/CD to GHCR</span>
+            </li>
+            <li class="flex items-start gap-2.5 p-3 rounded-lg bg-bg-subtle/40 border border-border-subtle">
+              <span class="text-accent mt-0.5 font-mono text-xs">03</span>
+              <span>Prometheus metrics scraping and single-binary Loki log streaming with Grafana dashboards</span>
+            </li>
+            <li class="flex items-start gap-2.5 p-3 rounded-lg bg-bg-subtle/40 border border-border-subtle">
+              <span class="text-accent mt-0.5 font-mono text-xs">04</span>
+              <span>Argo Rollouts automated multi-step Canary traffic shifting with rollback verification</span>
+            </li>
+            <li class="flex items-start gap-2.5 p-3 rounded-lg bg-bg-subtle/40 border border-border-subtle md:col-span-2">
+              <span class="text-accent mt-0.5 font-mono text-xs">05</span>
+              <span>Velero disaster recovery with 100% namespace restoration validated in 17 seconds</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Technology Stack Badges -->
+        <div class="pt-4 border-t border-border-subtle space-y-2">
+          <div class="font-mono text-xs text-text-tertiary uppercase">Technologies Utilized</div>
+          <div class="flex flex-wrap gap-2 font-mono text-xs">
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">AWS (VPC, IAM, SSM, S3, EKS)</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Terraform</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Kubernetes (kind)</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Argo Rollouts</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Docker</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">GitHub Actions</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">GHCR</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Helm 3</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Prometheus</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Grafana</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Loki</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Velero</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">MinIO</span>
+            <span class="px-2.5 py-1 rounded bg-bg-subtle border border-border-subtle text-text-primary">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Interactive Phase Switcher
+  const buttons = document.querySelectorAll('.phase-btn');
+  const panels = document.querySelectorAll('.phase-content');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetPhase = btn.getAttribute('data-phase');
+
+      // Update button active states
+      buttons.forEach((b) => {
+        b.setAttribute('aria-selected', 'false');
+        b.classList.remove('bg-accent/10', 'border-accent', 'text-accent');
+        b.classList.add('bg-bg-subtle', 'border-border-subtle', 'text-text-secondary');
+      });
+
+      btn.setAttribute('aria-selected', 'true');
+      btn.classList.remove('bg-bg-subtle', 'border-border-subtle', 'text-text-secondary');
+      btn.classList.add('bg-accent/10', 'border-accent', 'text-accent');
+
+      // Update panel visibility
+      panels.forEach((p) => {
+        p.classList.add('hidden');
+      });
+
+      const activePanel = document.getElementById(`phase-content-${targetPhase}`);
+      activePanel?.classList.remove('hidden');
+    });
+  });
+</script>

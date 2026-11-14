@@ -1,0 +1,99 @@
+---
+const skillGroups = [
+  {
+    category: "Cloud & IaC",
+    items: [
+      { name: "AWS (VPC, IAM, SSM, S3, EKS)", level: "Intermediate" },
+      { name: "Terraform (Modular Architecture)", level: "Intermediate" },
+      { name: "S3 Remote State & Backend Locking", level: "Intermediate" },
+      { name: "IAM Least-Privilege Policies", level: "Intermediate" },
+      { name: "SSM Parameter Store Secrets", level: "Intermediate" },
+      { name: "Cost-Conscious Cloud Architecture", level: "Intermediate" }
+    ]
+  },
+  {
+    category: "Containers, Kubernetes & Progressive Delivery",
+    items: [
+      { name: "Kubernetes (k8s)", level: "Intermediate" },
+      { name: "Docker (Multi-stage, Non-root)", level: "Intermediate" },
+      { name: "Argo Rollouts (Canary Shifting)", level: "Intermediate" },
+      { name: "Helm 3", level: "Intermediate" },
+      { name: "kind (Kubernetes in Docker)", level: "Intermediate" },
+      { name: "Health Probes & Automated Rollbacks", level: "Intermediate" }
+    ]
+  },
+  {
+    category: "CI/CD, Observability & Backup",
+    items: [
+      { name: "GitHub Actions CI/CD", level: "Intermediate" },
+      { name: "GitHub Container Registry (GHCR)", level: "Intermediate" },
+      { name: "Prometheus", level: "Intermediate" },
+      { name: "Grafana (Dashboards-as-Code)", level: "Intermediate" },
+      { name: "Velero & MinIO (Backup & DR)", level: "Intermediate" },
+      { name: "Loki & Promtail", level: "Intermediate" }
+    ]
+  },
+  {
+    category: "Scripting, Databases & Systems Ops",
+    items: [
+      { name: "Shell Scripting (Bash/sh, Solaris)", level: "Advanced" },
+      { name: "Python Automation", level: "Intermediate" },
+      { name: "Linux / Unix Internals", level: "Intermediate" },
+      { name: "Oracle SQL & PL/SQL Optimization", level: "Intermediate" },
+      { name: "Oracle BRM (Billing Operations)", level: "Intermediate" },
+      { name: "Incident RCA & SLA Support", level: "Intermediate" }
+    ]
+  }
+];
+---
+
+<section id="skills" class="py-20 md:py-28 border-b border-border-subtle bg-bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="space-y-12">
+      <!-- Section Header -->
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 font-mono text-xs text-accent">
+          <span>05</span>
+          <span class="w-8 h-[1px] bg-accent/40"></span>
+          <span class="tracking-widest uppercase">TECHNICAL CAPABILITIES</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-text-primary">
+          Infrastructure &amp; Systems Tooling
+        </h2>
+        <p class="text-sm sm:text-base text-text-secondary max-w-2xl">
+          Categorized operational competencies. Calibrated with honest, verified proficiency levels—no arbitrary percentage bars or artificial ratings.
+        </p>
+      </div>
+
+      <!-- Skills 4-Group Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {skillGroups.map((group, groupIndex) => (
+          <div class="p-6 rounded-2xl bg-bg-surface border border-border-subtle shadow-sm space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-border-subtle">
+              <h3 class="font-display text-lg font-bold text-text-primary flex items-center gap-2">
+                <span class="font-mono text-xs text-accent">0{groupIndex + 1}.</span>
+                <span>{group.category}</span>
+              </h3>
+              <span class="font-mono text-[11px] text-text-tertiary">{group.items.length} SKILLS</span>
+            </div>
+
+            <div class="grid grid-cols-1 gap-2.5">
+              {group.items.map((skill) => (
+                <div class="flex items-center justify-between p-2.5 rounded-lg bg-bg-subtle/50 hover:bg-bg-subtle transition-colors border border-border-subtle/50 text-xs font-mono">
+                  <span class="text-text-primary font-medium">{skill.name}</span>
+                  <span class={`px-2 py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase ${
+                    skill.level === 'Advanced'
+                      ? 'bg-accent/15 text-accent border border-accent/30'
+                      : 'bg-bg-surface text-text-secondary border border-border-subtle'
+                  }`}>
+                    {skill.level}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
